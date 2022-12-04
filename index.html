@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bewerbungsseite Lars Schleyer</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/myStyles.css">
+
+  <script src="https://kit.fontawesome.com/4388071bbf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="light">
+
+  <main>
+
+    <!--- #SIDEBAR -->
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <!-- Rounded switch -->
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round" id="switcher"></span>
+        </label>
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profil/profilbild.jpg" alt="Lars Schleyer" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Lars Schleyer">Lars Schleyer</h1>
+
+          <p class="title">Web Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Kontaktdaten:</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:lars.schleyer@gmx.de" class="contact-link">lars.schleyer@gmx.de</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Telefon</p>
+
+              <a href="tel:01756615083" class="contact-link">0175/6615083</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Geburtstag
+              </p>
+
+              <time datetime="1982-06-23">24. Mai 1985</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Adresse</p>
+
+              <address>
+                Florian-Geyer-Str. 10 <br>
+                97421 Schweinfurt
+              </address>
+            </div>
+
+          </li>
+          
+        </ul>
+
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.xing.com/profile/Lars_Schleyer/cv" class="social-link" target="_blank">
+              <ion-icon name="logo-xing"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/lars-schleyer-6a4949181/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/Subbi85" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <li class="filter-item" data-toggle="modal" data-target="#impressumModal">
+              <button>Impressum</button>
+            </li>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Über mich</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Lebenslauf</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Kontakt</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <!-- Modal Impressum -->
+      <div class="modal fade" id="impressumModal" tabindex="-1" role="dialog" aria-labelledby="impressumModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title h3 article-title mb-0" id="impressumModalTitle">Impressum</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Impressum
+
+                Betreiber: <br>
+                Lars Schleyer <br>
+                E-Mail: lars.schleyer@gmx.de <br>
+                Florian-Geyer-Str. 10, <br>
+                97421 Schweinfurt <br>
+                ****************** <br>
+
+                Server-Log-Files
+                Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log Files,
+                die Ihr Browser automatisch an uns übermittelt.
+                Dies sind: <br> <br>
+
+                    Browsertyp und Browserversion
+                    verwendetes Betriebssystem
+                    Referrer URL
+                    Hostname des zugreifenden Rechners
+                    Uhrzeit der Serveranfrage Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser
+                    Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen,
+                    wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden. <br>
+
+                ****************** <br>
+                Inhalt des Onlineangebotes
+                Der Autor dieser Webseite übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen.
+                Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw.
+                durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein
+                nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt. Alle Angebote sind freibleibend und unverbindlich.
+                Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen,
+                zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen. <br>
+                ****************** <br>
+                Urheber-& Kennzeichnungsrecht
+                Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken,
+                Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder
+                auf lizenzfreie Grafiken (u.a. von Pixabey), Tondokumente, Videosequenzen und Texte zurückzugreifen.
+                Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen
+                des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer.
+                Allein aufgrund der bloßen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind!
+                Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten.
+                Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder
+                gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet. <br>
+                ******************
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <article class="about active" data-page="über mich">
+
+        <header>
+          <h2 class="h2 article-title">Über mich</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Vor ca. 3 Jahren habe ich meine Begeisterung für die Webentwicklung entdeckt, und begann wenig später erste Projekte umzusetzen und einen Berufswunsch zu entwickeln. <br> Nach den ersten Erfahrungen mit komplett selbstgeschriebenen Seiten (<a href="https://lars.schleyer-sw.de/diverses/bewerbung/" class="bewerbungLink" target="blank">alte Bewerbungsseite</a> ). arbeitete ich mit CMS (Joomla und später WordPress) an weiteren Projekten. <br>
+            Meinen erste Anstellung als Webentwickler bei der Netzhaut GmbH ergriff ich dann im Dezember 2019. In den letzten 2,5 Jahren habe ich einige Projekte in Craft CMS und in Typo3 umgesetzt und habe bis zum heutigen Tag meine fachlichen Kenntnise erweitert und professionell gearbeitet. <br>
+            Derzeit möchte ich mich beruflich verändern und bin daher auf der Suche nach neuen Herausforderungen. Besonders spannend finde ich das WordPress-Umfeld, aber auch eine Entwicklung in Richtung der JS-Frameworks (besonders React.JS) finde ich durchaus reizvoll.
+            Aktuell bin ich noch vertraglich gebunden, sodass ich Ihnen zum 01.07.2022 zur Verfügung stehe.
+
+          </p>
+        </section>
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="clients-title">Was ich kann</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="svg-path" opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M40.6377 19.814C40.4183 19.7228 40.1658 19.7732 39.9978 19.9416L38.2394 21.7057V9.71161C38.2394 9.38628 37.9766 9.12261 37.6523 9.12261H33.1413L34.7788 7.47985L34.7795 7.47906L36.3573 5.89617C36.6954 5.55704 36.8816 5.10591 36.8816 4.62624C36.8816 4.14658 36.6954 3.6956 36.3573 3.35631L34.5328 1.52591C34.1948 1.18677 33.7451 1 33.2669 1C32.7888 1 32.3392 1.18677 32.0011 1.52591L30.4225 3.10958L28.515 5.02322L24.4288 9.12254H6.2047V3.29564C6.2047 2.9703 5.94181 2.70665 5.61759 2.70665C3.07149 2.70681 1 4.7848 1 7.33924V32.3559C1 32.3994 1.005 32.4417 1.01391 32.4825C1.095 33.5664 1.56242 34.5734 2.3436 35.3379C3.1786 36.1549 4.28087 36.6048 5.44743 36.6048H23.3879L20.0091 39.9946C19.8412 40.163 19.791 40.4162 19.8818 40.6364C19.9727 40.8565 20.1868 41 20.4243 41H40.413C40.7372 41 41.0001 40.7364 41.0001 40.411V20.3582C41.0001 20.12 40.857 19.9052 40.6377 19.814ZM32.8315 2.35897C33.0715 2.11804 33.4626 2.11804 33.7026 2.35897L35.5272 4.18945C35.7673 4.4303 35.7673 4.82242 35.5272 5.06335L34.3638 6.23053L31.668 3.52615L32.8315 2.35897ZM30.8377 4.35913L33.5334 7.06343L32.4562 8.14417L29.7606 5.43987L30.8377 4.35913ZM18.3967 21.76L16.715 22.3556L15.5945 21.2315L16.1882 19.5444L18.3967 21.76ZM35.8293 30.1707L30.1707 35.8293C30.1077 35.8923 30.1523 36 30.2414 36H36V30.2414C36 30.1523 35.8923 30.1077 35.8293 30.1707ZM16 18.5L19.5 22L32.5 9L29 5.5L16 18.5Z"
+                    fill="url(#paint0_linear)" />
+                  <path class="svg-path"
+                    d="M36.3998 29.2549C36.1804 29.1637 35.9279 29.2141 35.76 29.3825L29.3439 35.8193C29.176 35.9878 29.1257 36.2411 29.2167 36.4612C29.3075 36.6814 29.5217 36.8248 29.7591 36.8248H36.1752C36.4995 36.8248 36.7623 36.5611 36.7623 36.2358V29.799C36.7622 29.5609 36.6192 29.3461 36.3998 29.2549ZM31.1763 35.6469L35.5879 31.221V35.6469H31.1763Z"
+                    fill="url(#paint1_linear)" stroke="url(#paint2_linear)" stroke-width="0.25" />
+                  <path class="svg-path"
+                    d="M40.6377 19.814C40.4183 19.7228 40.1658 19.7732 39.9978 19.9416L38.2394 21.7057V9.71161C38.2394 9.38628 37.9766 9.12261 37.6523 9.12261H33.1413L34.7788 7.47985C34.7791 7.47962 34.7793 7.47929 34.7795 7.47906L36.3573 5.89617C36.6954 5.55704 36.8816 5.10591 36.8816 4.62624C36.8816 4.14658 36.6954 3.6956 36.3573 3.35631L34.5328 1.52591C34.1948 1.18677 33.7451 1 33.2669 1C32.7888 1 32.3392 1.18677 32.0011 1.52591L30.4225 3.10958L28.515 5.02322L24.4288 9.12254H6.2047V3.29564C6.2047 2.9703 5.94181 2.70665 5.61759 2.70665C3.07149 2.70681 1 4.7848 1 7.33924V32.3559C1 32.3994 1.005 32.4417 1.01391 32.4825C1.095 33.5664 1.56242 34.5734 2.3436 35.3379C3.1786 36.1549 4.28087 36.6048 5.44743 36.6048H23.3879L20.0091 39.9946C19.8412 40.163 19.791 40.4162 19.8818 40.6364C19.9727 40.8565 20.1868 41 20.4243 41H40.413C40.7372 41 41.0001 40.7364 41.0001 40.411V20.3582C41.0001 20.12 40.857 19.9052 40.6377 19.814ZM32.8315 2.35897C33.0715 2.11804 33.4626 2.11804 33.7026 2.35897L35.5272 4.18945C35.7673 4.4303 35.7673 4.82242 35.5272 5.06335L34.3638 6.23053L31.668 3.52615L32.8315 2.35897ZM30.8377 4.35913L33.5334 7.06343L32.4562 8.14417L29.7606 5.43987L30.8377 4.35913ZM39.826 26.9764H38.7428C38.4185 26.9764 38.1557 27.2401 38.1557 27.5654C38.1557 27.8908 38.4185 28.1544 38.7428 28.1544H39.826V29.9293H38.7428C38.4185 29.9293 38.1557 30.1931 38.1557 30.5184C38.1557 30.8437 38.4185 31.1074 38.7428 31.1074H39.826V32.8822H38.7428C38.4185 32.8822 38.1557 33.1458 38.1557 33.4712C38.1557 33.7965 38.4185 34.0602 38.7428 34.0602H39.826V35.8351H38.7428C38.4185 35.8351 38.1557 36.0988 38.1557 36.4241C38.1557 36.7495 38.4185 37.0131 38.7428 37.0131H39.826V39.8222H21.8416L27.7719 33.873C28.0012 33.6428 28.0012 33.27 27.7719 33.04C27.7456 33.0135 27.7173 32.9906 27.6877 32.9703C27.4591 32.8133 27.1446 32.8363 26.9415 33.04L24.5622 35.427H5.44751C3.66688 35.427 2.23344 34.0324 2.17703 32.2493C2.18039 32.1373 2.18906 32.0263 2.20297 31.9166C2.20305 31.916 2.20313 31.9154 2.20321 31.9147C2.20977 31.8626 2.21766 31.8107 2.22664 31.7592C2.22766 31.7533 2.22875 31.7473 2.22977 31.7415C2.23797 31.6955 2.24719 31.6497 2.25727 31.6041C2.26008 31.5914 2.26305 31.5787 2.26602 31.5661C2.27492 31.5275 2.28453 31.4892 2.29485 31.451C2.30047 31.4303 2.30633 31.4099 2.31235 31.3893C2.32094 31.3593 2.32985 31.3295 2.3393 31.2999C2.34875 31.2704 2.35883 31.2411 2.36907 31.2119C2.37617 31.1915 2.38321 31.171 2.39086 31.1507C2.40516 31.1121 2.42032 31.074 2.43594 31.0361C2.44039 31.0252 2.44477 31.0142 2.44938 31.0033C2.46946 30.9562 2.49032 30.9098 2.51235 30.8638C2.51328 30.8619 2.51414 30.8599 2.51508 30.858C2.9743 29.9046 3.85751 29.1938 4.91743 28.9732C4.9204 28.9726 4.92337 28.9719 4.92634 28.9712C4.97493 28.9613 5.02399 28.9528 5.07337 28.9449C5.08157 28.9436 5.08977 28.9418 5.09813 28.9406C5.14274 28.9338 5.18782 28.9285 5.2329 28.9234C5.24556 28.922 5.25813 28.92 5.27087 28.9188C5.31438 28.9144 5.35829 28.9115 5.4022 28.9087C5.4161 28.9078 5.43001 28.9064 5.44392 28.9057C5.50142 28.9028 5.55938 28.9013 5.61759 28.9013C5.94181 28.9013 6.2047 28.6377 6.2047 28.3123V24.0416C6.2047 23.7163 5.94181 23.4527 5.61759 23.4527C5.29337 23.4527 5.03048 23.7163 5.03048 24.0416V27.7604C4.03907 27.8862 3.11883 28.3298 2.39321 29.0407C2.31688 29.1154 2.24453 29.1932 2.17406 29.2722V7.33924C2.17406 5.63526 3.41047 4.21531 5.0304 3.93488V21.6858C5.0304 22.011 5.29329 22.2748 5.61751 22.2748C5.94173 22.2748 6.20462 22.011 6.20462 21.6858V10.3006H23.2547L20.009 13.5567C19.7797 13.7868 19.7797 14.1597 20.009 14.3897C20.2383 14.6196 20.61 14.6196 20.8393 14.3897L25.0872 10.1281C25.0873 10.128 25.0874 10.1278 25.0875 10.1277L28.9301 6.27278L31.6257 8.97715L31.3094 9.29441C31.3092 9.29465 31.3089 9.29488 31.3087 9.29513L19.4705 21.1715L16.7749 18.4672L19.1083 16.1263C19.3376 15.8961 19.3376 15.5233 19.1083 15.2933C18.879 15.0634 18.5073 15.0634 18.2781 15.2933L15.5294 18.0507C15.5147 18.0655 15.501 18.081 15.4881 18.097C15.4838 18.1024 15.48 18.1081 15.4759 18.1136C15.4676 18.1247 15.4595 18.1358 15.4519 18.1474C15.4476 18.1542 15.4437 18.1611 15.4396 18.168C15.4332 18.179 15.4269 18.1902 15.4212 18.2015C15.4175 18.2088 15.4141 18.2164 15.4107 18.224C15.4054 18.2355 15.4006 18.2473 15.3961 18.259C15.3946 18.2632 15.3925 18.2671 15.391 18.2712L14.2472 21.522L13.4674 23.7384C13.4571 23.7678 13.4496 23.7978 13.4441 23.828H11.4916C11.1674 23.828 10.9045 24.0916 10.9045 24.4169C10.9045 24.7423 11.1674 25.0059 11.4916 25.0059H27.7505C28.0748 25.0059 28.3376 24.7423 28.3376 24.4169C28.3376 24.0916 28.0748 23.828 27.7505 23.828H16.0854L19.6659 22.5599C19.6689 22.5589 19.6717 22.5574 19.6746 22.5563C19.6886 22.5511 19.7022 22.5452 19.7157 22.5391C19.7211 22.5366 19.7265 22.5342 19.7318 22.5316C19.7458 22.5246 19.7596 22.5168 19.7732 22.5085C19.7776 22.5058 19.7821 22.5034 19.7864 22.5007C19.8006 22.4916 19.8143 22.4816 19.8279 22.4711C19.8312 22.4686 19.8347 22.4663 19.838 22.4636C19.8543 22.4504 19.8703 22.4363 19.8855 22.421L31.9671 10.3007H37.0652V22.8837L28.667 31.3089C28.4377 31.5391 28.4377 31.9119 28.667 32.1419C28.6813 32.1563 28.6962 32.1698 28.7116 32.1823C28.8193 32.2704 28.9508 32.3145 29.0822 32.3145C29.2136 32.3145 29.3451 32.2704 29.4527 32.1823C29.4681 32.1698 29.483 32.1563 29.4973 32.1419L29.4976 32.1417L39.826 21.7799V26.9764ZM18.3967 21.76L16.715 22.3556L15.5945 21.2315L16.1882 19.5444L18.3967 21.76Z"
+                    fill="url(#paint3_linear)" stroke="url(#paint4_linear)" stroke-width="0.25" />
+                  <defs>
+                    <linearGradient id="paint0_linear" x1="3.26667" y1="1" x2="37.8" y2="39.1334"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear" x1="29.602" y1="29.21" x2="36.1781" y2="36.4484"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear" x1="29.602" y1="29.21" x2="36.1781" y2="36.4484"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear" x1="3.26667" y1="1" x2="37.8" y2="39.1334"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint4_linear" x1="3.26667" y1="1" x2="37.8" y2="39.1334"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frontend Development</h4>
+
+                <p class="service-item-text">
+                  Frontend Development ist ein zentraler Bestandteil meiner Arbeit. Designs detailgetreu umzusetzen gehört für mich ebenso zu einer professionellen Arbeitsweise, wie der Umgang mit REST-APIs und anderen Tools.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="svg-path" opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3 1C1.89543 1 1 1.89543 1 3V28C1 29.1046 1.89543 30 3 30H37C38.1046 30 39 29.1046 39 28V3C39 1.89543 38.1046 1 37 1H3ZM36 9H4V28H36V9Z"
+                    fill="url(#paint0_linear)" />
+                  <path class="svg-path"
+                    d="M37.6172 0.375H2.38281C1.06903 0.375 0 1.44403 0 2.75781V29.2422C0 30.556 1.06903 31.625 2.38281 31.625H37.6172C38.931 31.625 40 30.556 40 29.2422V2.75781C40 1.44403 38.931 0.375 37.6172 0.375ZM38.4375 29.2422C38.4375 29.6945 38.0695 30.0625 37.6172 30.0625H2.38281C1.93054 30.0625 1.5625 29.6945 1.5625 29.2422V2.75781C1.5625 2.30554 1.93054 1.9375 2.38281 1.9375H37.6172C38.0695 1.9375 38.4375 2.30554 38.4375 2.75781V29.2422Z"
+                    fill="url(#paint1_linear)" />
+                  <path class="svg-path"
+                    d="M14.9219 5.79156H35.0781C35.5096 5.79156 35.8594 5.44183 35.8594 5.01031C35.8594 4.5791 35.5096 4.22906 35.0781 4.22906H14.9219C14.4904 4.22906 14.1406 4.5791 14.1406 5.01031C14.1406 5.44183 14.4904 5.79156 14.9219 5.79156Z"
+                    fill="url(#paint2_linear)" />
+                  <path class="svg-path"
+                    d="M3.99231 5.3094C4.01184 5.3564 4.03595 5.40157 4.06403 5.44368C4.0921 5.48671 4.12506 5.52669 4.16107 5.56239C4.30634 5.70857 4.50775 5.79158 4.71313 5.79158C4.76471 5.79158 4.81567 5.7867 4.86633 5.77663C4.91638 5.76656 4.96552 5.7516 5.01251 5.73207C5.05951 5.71254 5.10468 5.68843 5.14679 5.66035C5.18982 5.63136 5.2298 5.5984 5.2655 5.5627C5.30243 5.52669 5.33447 5.48671 5.36316 5.44398C5.39154 5.40157 5.41565 5.3564 5.43518 5.3094C5.45471 5.2618 5.46967 5.21266 5.47974 5.16322C5.48981 5.11256 5.49438 5.06099 5.49438 5.01033C5.49438 4.95937 5.48981 4.90779 5.47974 4.85805C5.46967 4.808 5.45471 4.75856 5.43518 4.71187C5.41565 4.66426 5.39154 4.61879 5.36316 4.57668C5.33447 4.53365 5.30243 4.49397 5.2655 4.45796C5.2298 4.42195 5.18982 4.3893 5.14679 4.36092C5.10468 4.33284 5.05951 4.30873 5.01251 4.2892C4.96552 4.26967 4.91638 4.25471 4.86633 4.24464C4.76563 4.2242 4.66187 4.2242 4.56085 4.24464C4.5108 4.25471 4.46167 4.26967 4.41498 4.2892C4.36707 4.30873 4.3219 4.33284 4.27979 4.36092C4.23676 4.3893 4.19678 4.42195 4.16107 4.45796C4.12506 4.49397 4.0921 4.53365 4.06403 4.57668C4.03595 4.61879 4.01184 4.66426 3.99231 4.71187C3.97278 4.75856 3.95782 4.808 3.94775 4.85805C3.93738 4.90779 3.93188 4.95937 3.93188 5.01033C3.93188 5.06099 3.93738 5.11256 3.94775 5.16322C3.95782 5.21266 3.97278 5.2618 3.99231 5.3094Z"
+                    fill="url(#paint3_linear)" />
+                  <path class="svg-path"
+                    d="M7.11731 5.3094C7.13684 5.3564 7.16095 5.40157 7.18903 5.44368C7.2171 5.48671 7.25006 5.52669 7.28607 5.56239C7.43134 5.70857 7.63275 5.79158 7.83813 5.79158C7.88971 5.79158 7.94067 5.7867 7.99133 5.77663C8.04138 5.76656 8.09052 5.7516 8.13751 5.73207C8.18451 5.71254 8.22968 5.68843 8.27179 5.66035C8.31482 5.63136 8.3548 5.5984 8.39142 5.5627C8.42743 5.52669 8.45947 5.48671 8.48816 5.44398C8.51654 5.40157 8.54065 5.3564 8.56018 5.3094C8.57971 5.2618 8.59467 5.21266 8.60474 5.16322C8.61481 5.11256 8.61938 5.06099 8.61938 5.01033C8.61938 4.95937 8.61481 4.90779 8.60474 4.85805C8.59467 4.808 8.57971 4.75856 8.56018 4.71187C8.54065 4.66426 8.51654 4.61879 8.48816 4.57668C8.45947 4.53365 8.42743 4.49397 8.39142 4.45796C8.3548 4.42195 8.31482 4.3893 8.27179 4.36092C8.22968 4.33284 8.18451 4.30873 8.13751 4.2892C8.09052 4.26967 8.04138 4.25471 7.99133 4.24464C7.89063 4.2242 7.78687 4.2242 7.68585 4.24464C7.6358 4.25471 7.58667 4.26967 7.53998 4.2892C7.49207 4.30873 7.4469 4.33284 7.40479 4.36092C7.36176 4.3893 7.32178 4.42195 7.28607 4.45796C7.25006 4.49397 7.2171 4.53365 7.18903 4.57668C7.16095 4.61879 7.13684 4.66426 7.11731 4.71187C7.09778 4.75856 7.08282 4.808 7.07275 4.85805C7.06238 4.90779 7.05688 4.95937 7.05688 5.01033C7.05688 5.06099 7.06238 5.11256 7.07275 5.16322C7.08282 5.21266 7.09778 5.2618 7.11731 5.3094Z"
+                    fill="url(#paint4_linear)" />
+                  <path class="svg-path"
+                    d="M10.2423 5.3094C10.2618 5.3564 10.2859 5.40157 10.314 5.44368C10.3421 5.48671 10.3751 5.52669 10.4111 5.56239C10.4468 5.5984 10.4868 5.63136 10.5298 5.66005C10.5719 5.68843 10.6171 5.71254 10.665 5.73207C10.7117 5.7516 10.7608 5.76656 10.8109 5.77663C10.8609 5.7867 10.9125 5.79128 10.9631 5.79128C11.0147 5.79128 11.0657 5.7867 11.1163 5.77663C11.1664 5.76656 11.2155 5.7516 11.2625 5.73207C11.3095 5.71254 11.3547 5.68843 11.3977 5.66005C11.4398 5.63136 11.4798 5.5984 11.5164 5.56239C11.5524 5.52669 11.5845 5.48671 11.6132 5.44368C11.6415 5.40157 11.6656 5.3564 11.6852 5.3094C11.7047 5.2618 11.7197 5.21266 11.7297 5.16322C11.7398 5.11256 11.7444 5.06099 11.7444 5.01003C11.7444 4.95937 11.7398 4.90779 11.7297 4.85774C11.7197 4.80769 11.7047 4.75856 11.6852 4.71187C11.6656 4.66396 11.6415 4.61879 11.6132 4.57668C11.5845 4.53365 11.5524 4.49367 11.5164 4.45796C11.4798 4.42195 11.4398 4.38899 11.3977 4.36092C11.3547 4.33284 11.3095 4.30873 11.2625 4.2892C11.2155 4.26967 11.1664 4.25471 11.1163 4.24464C11.0156 4.2242 10.9119 4.2242 10.8109 4.24464C10.7608 4.25471 10.7117 4.26967 10.665 4.2892C10.6171 4.30873 10.5719 4.33284 10.5298 4.36092C10.4868 4.38899 10.4468 4.42195 10.4111 4.45796C10.3751 4.49367 10.3421 4.53365 10.314 4.57668C10.2859 4.61879 10.2618 4.66396 10.2423 4.71187C10.2228 4.75856 10.2078 4.80769 10.1978 4.85774C10.1874 4.90779 10.1819 4.95937 10.1819 5.01003C10.1819 5.06099 10.1874 5.11256 10.1978 5.16322C10.2078 5.21266 10.2228 5.2618 10.2423 5.3094Z"
+                    fill="url(#paint5_linear)" />
+                  <path class="svg-path"
+                    d="M22.7154 13.739C22.344 13.5192 21.8649 13.6425 21.6452 14.0139L17.0099 21.8524C16.7901 22.2238 16.9131 22.7029 17.2845 22.9223C17.4093 22.9962 17.5464 23.0316 17.6816 23.0316C17.9486 23.0316 18.2089 22.8942 18.3548 22.6477L22.9901 14.8092C23.2098 14.4378 23.0868 13.9587 22.7154 13.739Z"
+                    fill="url(#paint6_linear)" />
+                  <path class="svg-path"
+                    d="M12.9769 16.0351V15.2462C12.9769 14.8095 13.3321 14.454 13.7688 14.454H13.7798C14.2113 14.454 14.561 14.1042 14.561 13.6727C14.561 13.2415 14.2113 12.8915 13.7798 12.8915H13.7688C12.4706 12.8915 11.4144 13.948 11.4144 15.2462V16.0351C11.4144 16.3192 11.2978 16.5963 11.0946 16.795L10.0823 17.7853C9.93305 17.9312 9.84852 18.1307 9.8473 18.3395C9.84638 18.5482 9.92878 18.7487 10.0765 18.8964L11.108 19.9276C11.307 20.1263 11.4174 20.3906 11.4196 20.6719L11.4251 21.4907C11.4342 22.7801 12.4904 23.8293 13.7798 23.8293C14.2113 23.8293 14.561 23.4792 14.561 23.048C14.561 22.6165 14.2113 22.2668 13.7798 22.2668C13.3458 22.2668 12.9906 21.9137 12.9876 21.48L12.9821 20.6613C12.9772 19.9664 12.7037 19.3133 12.2127 18.8226L11.7397 18.3499L12.1874 17.9119C12.6891 17.4209 12.9769 16.737 12.9769 16.0351Z"
+                    fill="url(#paint7_linear)" />
+                  <path class="svg-path"
+                    d="M27.023 20.6857V21.4745C27.023 21.9113 26.6678 22.2668 26.2311 22.2668H26.2201C25.7886 22.2668 25.4388 22.6165 25.4388 23.048C25.4388 23.4792 25.7886 23.8293 26.2201 23.8293H26.2311C27.5293 23.8293 28.5855 22.7728 28.5855 21.4745V20.6857C28.5855 20.4016 28.7021 20.1245 28.9053 19.9258L29.9176 18.9355C30.0668 18.7896 30.1514 18.59 30.1523 18.3813C30.1535 18.1725 30.0711 17.972 29.9234 17.8243L28.8919 16.7932C28.6929 16.5945 28.5821 16.3299 28.5803 16.0488L28.5745 15.23C28.5657 13.9407 27.5095 12.8918 26.2201 12.8918C25.7886 12.8918 25.4388 13.2415 25.4388 13.673C25.4388 14.1042 25.7886 14.4543 26.2201 14.4543C26.6537 14.4543 27.0093 14.8071 27.012 15.2407L27.0178 16.0595C27.0227 16.7541 27.2958 17.4072 27.7872 17.8982L28.2602 18.3709L27.8125 18.8088C27.3108 19.2996 27.023 19.9838 27.023 20.6857Z"
+                    fill="url(#paint8_linear)" />
+                  <path class="svg-path"
+                    d="M36.0443 8.13531H3.95569C3.52417 8.13531 3.17444 8.48535 3.17444 8.91656V27.6666C3.17444 28.0981 3.52417 28.4478 3.95569 28.4478H13.2553C13.6868 28.4478 14.0366 28.0981 14.0366 27.6666C14.0366 27.2354 13.6868 26.8853 13.2553 26.8853H4.73694V9.69781H35.2631V26.8853H19.5312C19.0997 26.8853 18.75 27.2354 18.75 27.6666C18.75 28.0981 19.0997 28.4478 19.5312 28.4478H36.0443C36.4758 28.4478 36.8256 28.0981 36.8256 27.6666V8.91656C36.8256 8.48535 36.4758 8.13531 36.0443 8.13531Z"
+                    fill="url(#paint9_linear)" />
+                  <defs>
+                    <linearGradient id="paint0_linear" x1="3.15333" y1="1" x2="26.6886" y2="35.0542"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear" x1="2.26667" y1="0.375001" x2="27.8327" y2="36.511"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear" x1="15.3714" y1="4.22906" x2="15.5472" y2="6.9288"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear" x1="4.02043" y1="4.22931" x2="5.36917" y2="5.71887"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint4_linear" x1="7.14543" y1="4.22931" x2="8.49417" y2="5.71887"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint5_linear" x1="10.2704" y1="4.22931" x2="11.6189" y2="5.71884"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint6_linear" x1="17.2521" y1="13.6301" x2="25.0143" y2="19.281"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint7_linear" x1="10.1144" y1="12.8915" x2="17.4785" y2="16.3959"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint8_linear" x1="25.7059" y1="12.8918" x2="33.0696" y2="16.3959"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint9_linear" x1="5.08133" y1="8.13532" x2="19.9152" y2="35.2721"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+
+                <p class="service-item-text">
+                  Der Umgang mit Datenbank, deren Anpassung und anderen Funktionen des Backends liegen mir. Des weiteren konnte ich erste Erfahrungen in der Entwicklung von Extensions bzw. Plugins für Typo3 und Craft3 CMS sammeln.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <svg width="40" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="svg-path" opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3 1C1.89543 1 1 1.89543 1 3V37C1 38.1046 1.89543 39 3 39H18.9C20.0046 39 20.9 38.1046 20.9 37V3C20.9 1.89543 20.0046 1 18.9 1H15.6631V2H6.23676V1H3Z"
+                    fill="url(#paint0_linear)" />
+                  <path class="svg-path"
+                    d="M8.50854 35.6745C8.13501 35.6745 7.83221 35.9773 7.83221 36.3508C7.83221 36.7243 8.13501 37.0271 8.50854 37.0271V35.6745ZM13.4633 37.0271C13.8368 37.0271 14.1396 36.7243 14.1396 36.3508C14.1396 35.9773 13.8368 35.6745 13.4633 35.6745V37.0271ZM0.400024 29.4141C0.400024 29.7876 0.702827 30.0904 1.07635 30.0904C1.44988 30.0904 1.75268 29.7876 1.75268 29.4141H0.400024ZM1.75268 32.387C1.75268 32.0134 1.44988 31.7106 1.07635 31.7106C0.702827 31.7106 0.400024 32.0134 0.400024 32.387H1.75268ZM20.2192 7.61303C20.2192 7.98656 20.522 8.28936 20.8955 8.28936C21.269 8.28936 21.5718 7.98656 21.5718 7.61303H20.2192ZM21.5718 10.5859C21.5718 10.2124 21.269 9.90956 20.8955 9.90956C20.522 9.90956 20.2192 10.2124 20.2192 10.5859H21.5718ZM18.48 38.6473H3.49181V40H18.48V38.6473ZM3.49181 1.35266H6.52662V0H3.49181V1.35266ZM5.8503 1.69206H7.20295V0.676328H5.8503V1.69206ZM7.49281 3.33457H14.4791V1.98191H7.49281V3.33457ZM6.52662 1.35266H15.4452V0H6.52662V1.35266ZM15.4452 1.35266H18.48V0H15.4452V1.35266ZM16.1216 1.69206V0.676328H14.7689V1.69206H16.1216ZM8.50854 37.0271H13.4633V35.6745H8.50854V37.0271ZM1.75268 29.4141V3.09179H0.400024V29.4141H1.75268ZM1.75268 36.9082V32.387H0.400024V36.9082H1.75268ZM20.2192 3.09179V7.61303H21.5718V3.09179H20.2192ZM20.2192 10.5859V36.9082H21.5718V10.5859H20.2192ZM14.4791 3.33457C15.3862 3.33457 16.1216 2.5992 16.1216 1.69206H14.7689C14.7689 1.85214 14.6392 1.98191 14.4791 1.98191V3.33457ZM3.49181 38.6473C2.53132 38.6473 1.75268 37.8687 1.75268 36.9082H0.400024C0.400024 38.6157 1.78427 40 3.49181 40V38.6473ZM18.48 40C20.1876 40 21.5718 38.6157 21.5718 36.9082H20.2192C20.2192 37.8687 19.4405 38.6473 18.48 38.6473V40ZM18.48 1.35266C19.4405 1.35266 20.2192 2.13129 20.2192 3.09179H21.5718C21.5718 1.38424 20.1876 0 18.48 0V1.35266ZM5.8503 1.69206C5.8503 2.5992 6.58567 3.33457 7.49281 3.33457V1.98191C7.33272 1.98191 7.20295 1.85214 7.20295 1.69206H5.8503ZM3.49181 0C1.78427 0 0.400024 1.38424 0.400024 3.09179H1.75268C1.75268 2.13129 2.53132 1.35266 3.49181 1.35266V0Z"
+                    fill="url(#paint1_linear)" />
+                  <defs>
+                    <linearGradient id="paint0_linear" x1="2.12767" y1="1" x2="30.7018" y2="17.5237"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear" x1="1.59976" y1="8.08974e-07" x2="31.8368" y2="17.6727"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Responsive Design</h4>
+
+                <p class="service-item-text">
+                  In der aktuellen Zeit ist ein gutes responsive Design selbstverständlich. Egal ob mobile- oder desktop-first. Im Umgang mit Bootstrap und Media-Queries konnte ich mir fundiertes Wissen aneignen.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="svg-path" opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3 1C1.89543 1 1 1.89543 1 3V28C1 29.1046 1.89543 30 3 30H37C38.1046 30 39 29.1046 39 28V3C39 1.89543 38.1046 1 37 1H3ZM36 9H4V28H36V9Z"
+                    fill="url(#paint0_linear)" />
+                  <path class="svg-path"
+                    d="M37.6172 0.375H2.38281C1.06903 0.375 0 1.44403 0 2.75781V29.2422C0 30.556 1.06903 31.625 2.38281 31.625H37.6172C38.931 31.625 40 30.556 40 29.2422V2.75781C40 1.44403 38.931 0.375 37.6172 0.375ZM38.4375 29.2422C38.4375 29.6945 38.0695 30.0625 37.6172 30.0625H2.38281C1.93054 30.0625 1.5625 29.6945 1.5625 29.2422V2.75781C1.5625 2.30554 1.93054 1.9375 2.38281 1.9375H37.6172C38.0695 1.9375 38.4375 2.30554 38.4375 2.75781V29.2422Z"
+                    fill="url(#paint1_linear)" />
+                  <path class="svg-path"
+                    d="M14.9219 5.79156H35.0781C35.5096 5.79156 35.8594 5.44183 35.8594 5.01031C35.8594 4.5791 35.5096 4.22906 35.0781 4.22906H14.9219C14.4904 4.22906 14.1406 4.5791 14.1406 5.01031C14.1406 5.44183 14.4904 5.79156 14.9219 5.79156Z"
+                    fill="url(#paint2_linear)" />
+                  <path class="svg-path"
+                    d="M3.99231 5.3094C4.01184 5.3564 4.03595 5.40157 4.06403 5.44368C4.0921 5.48671 4.12506 5.52669 4.16107 5.56239C4.30634 5.70857 4.50775 5.79158 4.71313 5.79158C4.76471 5.79158 4.81567 5.7867 4.86633 5.77663C4.91638 5.76656 4.96552 5.7516 5.01251 5.73207C5.05951 5.71254 5.10468 5.68843 5.14679 5.66035C5.18982 5.63136 5.2298 5.5984 5.2655 5.5627C5.30243 5.52669 5.33447 5.48671 5.36316 5.44398C5.39154 5.40157 5.41565 5.3564 5.43518 5.3094C5.45471 5.2618 5.46967 5.21266 5.47974 5.16322C5.48981 5.11256 5.49438 5.06099 5.49438 5.01033C5.49438 4.95937 5.48981 4.90779 5.47974 4.85805C5.46967 4.808 5.45471 4.75856 5.43518 4.71187C5.41565 4.66426 5.39154 4.61879 5.36316 4.57668C5.33447 4.53365 5.30243 4.49397 5.2655 4.45796C5.2298 4.42195 5.18982 4.3893 5.14679 4.36092C5.10468 4.33284 5.05951 4.30873 5.01251 4.2892C4.96552 4.26967 4.91638 4.25471 4.86633 4.24464C4.76563 4.2242 4.66187 4.2242 4.56085 4.24464C4.5108 4.25471 4.46167 4.26967 4.41498 4.2892C4.36707 4.30873 4.3219 4.33284 4.27979 4.36092C4.23676 4.3893 4.19678 4.42195 4.16107 4.45796C4.12506 4.49397 4.0921 4.53365 4.06403 4.57668C4.03595 4.61879 4.01184 4.66426 3.99231 4.71187C3.97278 4.75856 3.95782 4.808 3.94775 4.85805C3.93738 4.90779 3.93188 4.95937 3.93188 5.01033C3.93188 5.06099 3.93738 5.11256 3.94775 5.16322C3.95782 5.21266 3.97278 5.2618 3.99231 5.3094Z"
+                    fill="url(#paint3_linear)" />
+                  <path class="svg-path"
+                    d="M7.11731 5.3094C7.13684 5.3564 7.16095 5.40157 7.18903 5.44368C7.2171 5.48671 7.25006 5.52669 7.28607 5.56239C7.43134 5.70857 7.63275 5.79158 7.83813 5.79158C7.88971 5.79158 7.94067 5.7867 7.99133 5.77663C8.04138 5.76656 8.09052 5.7516 8.13751 5.73207C8.18451 5.71254 8.22968 5.68843 8.27179 5.66035C8.31482 5.63136 8.3548 5.5984 8.39142 5.5627C8.42743 5.52669 8.45947 5.48671 8.48816 5.44398C8.51654 5.40157 8.54065 5.3564 8.56018 5.3094C8.57971 5.2618 8.59467 5.21266 8.60474 5.16322C8.61481 5.11256 8.61938 5.06099 8.61938 5.01033C8.61938 4.95937 8.61481 4.90779 8.60474 4.85805C8.59467 4.808 8.57971 4.75856 8.56018 4.71187C8.54065 4.66426 8.51654 4.61879 8.48816 4.57668C8.45947 4.53365 8.42743 4.49397 8.39142 4.45796C8.3548 4.42195 8.31482 4.3893 8.27179 4.36092C8.22968 4.33284 8.18451 4.30873 8.13751 4.2892C8.09052 4.26967 8.04138 4.25471 7.99133 4.24464C7.89063 4.2242 7.78687 4.2242 7.68585 4.24464C7.6358 4.25471 7.58667 4.26967 7.53998 4.2892C7.49207 4.30873 7.4469 4.33284 7.40479 4.36092C7.36176 4.3893 7.32178 4.42195 7.28607 4.45796C7.25006 4.49397 7.2171 4.53365 7.18903 4.57668C7.16095 4.61879 7.13684 4.66426 7.11731 4.71187C7.09778 4.75856 7.08282 4.808 7.07275 4.85805C7.06238 4.90779 7.05688 4.95937 7.05688 5.01033C7.05688 5.06099 7.06238 5.11256 7.07275 5.16322C7.08282 5.21266 7.09778 5.2618 7.11731 5.3094Z"
+                    fill="url(#paint4_linear)" />
+                  <path class="svg-path"
+                    d="M10.2423 5.3094C10.2618 5.3564 10.2859 5.40157 10.314 5.44368C10.3421 5.48671 10.3751 5.52669 10.4111 5.56239C10.4468 5.5984 10.4868 5.63136 10.5298 5.66005C10.5719 5.68843 10.6171 5.71254 10.665 5.73207C10.7117 5.7516 10.7608 5.76656 10.8109 5.77663C10.8609 5.7867 10.9125 5.79128 10.9631 5.79128C11.0147 5.79128 11.0657 5.7867 11.1163 5.77663C11.1664 5.76656 11.2155 5.7516 11.2625 5.73207C11.3095 5.71254 11.3547 5.68843 11.3977 5.66005C11.4398 5.63136 11.4798 5.5984 11.5164 5.56239C11.5524 5.52669 11.5845 5.48671 11.6132 5.44368C11.6415 5.40157 11.6656 5.3564 11.6852 5.3094C11.7047 5.2618 11.7197 5.21266 11.7297 5.16322C11.7398 5.11256 11.7444 5.06099 11.7444 5.01003C11.7444 4.95937 11.7398 4.90779 11.7297 4.85774C11.7197 4.80769 11.7047 4.75856 11.6852 4.71187C11.6656 4.66396 11.6415 4.61879 11.6132 4.57668C11.5845 4.53365 11.5524 4.49367 11.5164 4.45796C11.4798 4.42195 11.4398 4.38899 11.3977 4.36092C11.3547 4.33284 11.3095 4.30873 11.2625 4.2892C11.2155 4.26967 11.1664 4.25471 11.1163 4.24464C11.0156 4.2242 10.9119 4.2242 10.8109 4.24464C10.7608 4.25471 10.7117 4.26967 10.665 4.2892C10.6171 4.30873 10.5719 4.33284 10.5298 4.36092C10.4868 4.38899 10.4468 4.42195 10.4111 4.45796C10.3751 4.49367 10.3421 4.53365 10.314 4.57668C10.2859 4.61879 10.2618 4.66396 10.2423 4.71187C10.2228 4.75856 10.2078 4.80769 10.1978 4.85774C10.1874 4.90779 10.1819 4.95937 10.1819 5.01003C10.1819 5.06099 10.1874 5.11256 10.1978 5.16322C10.2078 5.21266 10.2228 5.2618 10.2423 5.3094Z"
+                    fill="url(#paint5_linear)" />
+                  <path class="svg-path"
+                    d="M22.7154 13.739C22.344 13.5192 21.8649 13.6425 21.6452 14.0139L17.0099 21.8524C16.7901 22.2238 16.9131 22.7029 17.2845 22.9223C17.4093 22.9962 17.5464 23.0316 17.6816 23.0316C17.9486 23.0316 18.2089 22.8942 18.3548 22.6477L22.9901 14.8092C23.2098 14.4378 23.0868 13.9587 22.7154 13.739Z"
+                    fill="url(#paint6_linear)" />
+                  <path class="svg-path"
+                    d="M12.9769 16.0351V15.2462C12.9769 14.8095 13.3321 14.454 13.7688 14.454H13.7798C14.2113 14.454 14.561 14.1042 14.561 13.6727C14.561 13.2415 14.2113 12.8915 13.7798 12.8915H13.7688C12.4706 12.8915 11.4144 13.948 11.4144 15.2462V16.0351C11.4144 16.3192 11.2978 16.5963 11.0946 16.795L10.0823 17.7853C9.93305 17.9312 9.84852 18.1307 9.8473 18.3395C9.84638 18.5482 9.92878 18.7487 10.0765 18.8964L11.108 19.9276C11.307 20.1263 11.4174 20.3906 11.4196 20.6719L11.4251 21.4907C11.4342 22.7801 12.4904 23.8293 13.7798 23.8293C14.2113 23.8293 14.561 23.4792 14.561 23.048C14.561 22.6165 14.2113 22.2668 13.7798 22.2668C13.3458 22.2668 12.9906 21.9137 12.9876 21.48L12.9821 20.6613C12.9772 19.9664 12.7037 19.3133 12.2127 18.8226L11.7397 18.3499L12.1874 17.9119C12.6891 17.4209 12.9769 16.737 12.9769 16.0351Z"
+                    fill="url(#paint7_linear)" />
+                  <path class="svg-path"
+                    d="M27.023 20.6857V21.4745C27.023 21.9113 26.6678 22.2668 26.2311 22.2668H26.2201C25.7886 22.2668 25.4388 22.6165 25.4388 23.048C25.4388 23.4792 25.7886 23.8293 26.2201 23.8293H26.2311C27.5293 23.8293 28.5855 22.7728 28.5855 21.4745V20.6857C28.5855 20.4016 28.7021 20.1245 28.9053 19.9258L29.9176 18.9355C30.0668 18.7896 30.1514 18.59 30.1523 18.3813C30.1535 18.1725 30.0711 17.972 29.9234 17.8243L28.8919 16.7932C28.6929 16.5945 28.5821 16.3299 28.5803 16.0488L28.5745 15.23C28.5657 13.9407 27.5095 12.8918 26.2201 12.8918C25.7886 12.8918 25.4388 13.2415 25.4388 13.673C25.4388 14.1042 25.7886 14.4543 26.2201 14.4543C26.6537 14.4543 27.0093 14.8071 27.012 15.2407L27.0178 16.0595C27.0227 16.7541 27.2958 17.4072 27.7872 17.8982L28.2602 18.3709L27.8125 18.8088C27.3108 19.2996 27.023 19.9838 27.023 20.6857Z"
+                    fill="url(#paint8_linear)" />
+                  <path class="svg-path"
+                    d="M36.0443 8.13531H3.95569C3.52417 8.13531 3.17444 8.48535 3.17444 8.91656V27.6666C3.17444 28.0981 3.52417 28.4478 3.95569 28.4478H13.2553C13.6868 28.4478 14.0366 28.0981 14.0366 27.6666C14.0366 27.2354 13.6868 26.8853 13.2553 26.8853H4.73694V9.69781H35.2631V26.8853H19.5312C19.0997 26.8853 18.75 27.2354 18.75 27.6666C18.75 28.0981 19.0997 28.4478 19.5312 28.4478H36.0443C36.4758 28.4478 36.8256 28.0981 36.8256 27.6666V8.91656C36.8256 8.48535 36.4758 8.13531 36.0443 8.13531Z"
+                    fill="url(#paint9_linear)" />
+                  <defs>
+                    <linearGradient id="paint0_linear" x1="3.15333" y1="1" x2="26.6886" y2="35.0542"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear" x1="2.26667" y1="0.375001" x2="27.8327" y2="36.511"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear" x1="15.3714" y1="4.22906" x2="15.5472" y2="6.9288"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear" x1="4.02043" y1="4.22931" x2="5.36917" y2="5.71887"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint4_linear" x1="7.14543" y1="4.22931" x2="8.49417" y2="5.71887"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint5_linear" x1="10.2704" y1="4.22931" x2="11.6189" y2="5.71884"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint6_linear" x1="17.2521" y1="13.6301" x2="25.0143" y2="19.281"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint7_linear" x1="10.1144" y1="12.8915" x2="17.4785" y2="16.3959"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint8_linear" x1="25.7059" y1="12.8918" x2="33.0696" y2="16.3959"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                    <linearGradient id="paint9_linear" x1="5.08133" y1="8.13532" x2="19.9152" y2="35.2721"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.259336" stop-color="#FFDB6E" />
+                      <stop offset="1" stop-color="#FFBC5E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Content Management Systeme</h4>
+
+                <p class="service-item-text">
+                  Zielorientiertes, selbstständiges Arbeiten mit den CMS Typo3, Craft3, Shopware 5.
+                  Darüber hinaus erste praktische Erfahrungen mit WordPress und Jimdo. <br>
+                  Ich freue mich auf spannende, zukünftige Aufgaben in diesem Bereich. <br>
+                  Vorzugsweise im WordPress Umfeld.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Lars Schleyer" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Lars Schleyer</h4>
+              <div data-modal-text>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Bisherige Projekte</h3>
+
+          <ul class="clients-list has-scrollbar" id="projectGalery">
+          </ul>
+
+        </section>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="lebenslauf">
+
+        <header>
+          <h2 class="h2 article-title">Lebenslauf</h2>
+        </header>
+
+
+        <!-- Beruflicher Werdegang -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Beruflicher Werdegang</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Webentwickler <br>
+                <a href="https://www.netzhaut.de/" target="_blank">Netzhaut GmbH, Würzburg</a>
+              </h4>
+
+              <span>12/2019 — 07/2022</span>
+
+              <p>
+                <!-- Jobbeschreibung -->
+                Umsetzung grafischer Entwürfe <br>
+                Erstellen von Webpräsenzen auf Basis von Typo3 und Craft CMS <br>
+                Erstellen von Online Shops auf Basis von Shopware 5 <br>
+                Erweiterung und Support von bestehenden Webpräsenzen <br>
+                Kundenschulungen über Typo3 Grundlagen <br>
+                Kundenbetreuung, Projektbetreuung und Kostenüberwachung
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">RMA Garantiemanager <br>
+                Persona Dienstleistungen GmbH
+              </h4>
+              <span>09/2019 — 12/2019</span>
+              <p>
+                Abwicklung von Garantiefällen für Scannergeräte <br>
+                Organisation von Austtauschgeräten <br>
+                Durchführung von Software-Update auf den Geräten <br>
+
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Certified JavaScript Developer <br>
+              </h4>
+
+              <span>01/2019 — 03/2019</span>
+
+              <p>
+                <strong>Weiterbildung:</strong> Certified Javascript Developer <br>
+                Inhalte: Grundlagen JS, High Order functions, OOP, Klassen, Node.js, <br>
+                Angular.js, React und Vue.js und mehr...
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">First-Level-Techsupport für iOS-Endgeräte <br>
+              </h4>
+
+              <span>07/2017 — 08/2018</span>
+
+              <p>
+                First-Level-Telefonsupport für iOS-Endgeräte <br>
+                Beratung bei Software- und Hardwareproblemen, <br>
+                Aufsetzen Reparaturaufträgen und AppleStore-Terminen, <br>
+                Kundensupport im Allgemeinen
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <p>
+                ...
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+        <!-- Ausbildung / Studium -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Ausbildung / Studium</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <!-- Erstes LI -->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Fachinformatiker für Anwendungsentwicklung<br>
+                <a href="https://www.apicon.de/de/" target="_blank">APICON GmbH, Schweinfurt</a>
+              </h4>
+              <span>08/2015 — 02/2017</span>
+              <p>
+                Bearbeiten von Kundenprojekten für SAP-Systeme (in ABAP) in einer 3-System Landschaft, <br>
+                Kundenabsprachen zu Projekten, <br>
+                Konzeption und Dokumentation von ABAP-Funktionsbausteinen
+              </p>
+            </li>
+
+            <!-- Zweites LI -->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Betriebswirtschaftslehre (Master)<br>
+                Otto-von-Guericke Universität Magdeburg
+              </h4>
+              <span>10/2011 — 09/2013</span>
+              <p>
+                <strong>Schwerpunkte:</strong> <br>
+                International Management, <br>
+                Management and Entrepreneurship
+              </p>
+            </li>
+
+            <!-- Drittes LI -->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Business Administration (BWL) <br>
+                Hochschule Magdeburg-Stendal
+              </h4>
+              <span>10/2008 — 09/2011</span>
+              
+              <p>
+                <strong>Schwerpunkte:</strong> <br>
+                Personalmanagement, <br>
+                Dienstleistungswirtschaft <br> <br>
+                <strong>Abschluss:</strong> <br>
+                Bachelor of Science (BWL)
+              </p>
+            </li>
+            <li class="timeline-item">
+              <p>
+                ...
+              </p>
+            </li>
+          </ol>
+
+        </section>
+        <section class="skill">
+
+          <!-- Tab links -->
+          <div class="tab">
+            <button class="h4 tablinks" id="defaultOpen" onclick="openTab(event, 'myskills')">Skills</button>
+            <button class="h4 tablinks" onclick="openTab(event, 'cms')">CMS</button>
+            <button class="h4 tablinks" onclick="openTab(event, 'hobbies')">anderes</button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="myskills" class="tabcontent active">
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:34px;height:34px">
+                  <title>HTML5 Logo Badge</title>
+                  <path fill="#E34F26" d="M71,460 L30,0 481,0 440,460 255,512"/>
+                  <path fill="#EF652A" d="M256,472 L405,431 440,37 256,37"/>
+                  <path fill="#EBEBEB" d="M256,208 L181,208 176,150 256,150 256,94 255,94 114,94 115,109 129,265 256,265zM256,355 L255,355 192,338 188,293 158,293 132,293 139,382 255,414 256,414z"/>
+                  <path fill="#FFF" d="M255,208 L255,265 325,265 318,338 255,355 255,414 371,382 372,372 385,223 387,208 371,208zM255,94 L255,129 255,150 255,150 392,150 392,150 392,150 393,138 396,109 397,94z"/>
+                </svg>
+
+
+                <h5 class="h5">HTML5 / CSS3</h5>
+                <data class="mb-8" value="80"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 1052 1052"><path fill="#f0db4f" d="M0 0h1052v1052H0z"/><path d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z" fill="#323330"/></svg>
+                <h5 class="h5">JavaScript</h5>
+                <data class="mb-8" value="70"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <svg width="34" height="34" viewBox="0 0 256 134" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><g fill-rule="evenodd"><ellipse fill="#8993BE" cx="128" cy="66.63" rx="128" ry="66.63"/><path d="M35.945 106.082l14.028-71.014H82.41c14.027.877 21.041 7.89 21.041 20.165 0 21.041-16.657 33.315-31.562 32.438H56.11l-3.507 18.411H35.945zm23.671-31.561L64 48.219h11.397c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.52zM100.192 87.671l14.027-71.013h16.658l-3.507 18.41h15.78c14.028.877 19.288 7.89 17.535 16.658l-6.137 35.945h-17.534l6.137-32.438c.876-4.384.876-7.014-5.26-7.014H124.74l-7.89 39.452h-16.658zM153.425 106.082l14.027-71.014h32.438c14.028.877 21.042 7.89 21.042 20.165 0 21.041-16.658 33.315-31.562 32.438h-15.781l-3.507 18.411h-16.657zm23.67-31.561l4.384-26.302h11.398c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.521z" fill="#232531"/></g></svg>
+                <h5 class="h5">PHP</h5>
+                <data class="mb-8" value="60"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 192.756 192.756"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M0 0h192.756v192.756H0V0z"/><path d="M8.504 128.227h5.845v-23.023l9.013 20.078c1.07 2.408 2.499 3.256 5.354 3.256 2.856 0 4.284-.848 5.354-3.256l9.013-20.078v23.023h5.8v-22.979c0-2.23-.893-3.303-2.722-3.883-4.417-1.383-7.407-.178-8.745 2.812l-8.834 19.766-8.566-19.766c-1.294-2.99-4.328-4.195-8.745-2.812-1.874.58-2.766 1.652-2.766 3.883v22.979h-.001zM53.746 109.486h5.8v12.672c-.044.713.223 2.32 3.436 2.365 1.606.043 12.537 0 12.626 0v-15.082h5.845c.044 0 0 20.568 0 20.658.044 5.086-6.291 6.156-9.191 6.246H53.88v-3.926s18.338.045 18.382 0c3.748-.357 3.302-2.23 3.302-2.855v-1.518H63.205c-5.756-.088-9.415-2.588-9.459-5.488 0-.267.134-12.937 0-13.072zM179.076 94.896c-3.568-.089-6.291.223-8.656 1.249-.668.268-1.695.268-1.828 1.116.357.355.445.936.713 1.428.58.893 1.518 2.096 2.365 2.721.893.715 1.83 1.428 2.811 2.053 1.785 1.07 3.748 1.65 5.398 2.723 1.027.623 2.008 1.428 2.99 2.141.445.357.803.893 1.383 1.115v-.088c-.312-.402-.402-.982-.67-1.43l-1.338-1.338c-1.293-1.695-2.945-3.213-4.686-4.461-1.383-.982-4.506-2.365-5.086-3.971-.045-.045-.09-.045-.09-.09.982-.135 2.143-.49 3.035-.715 1.518-.4 2.9-.312 4.461-.713.715-.224 1.428-.402 2.143-.625v-.402c-.803-.803-1.338-1.918-2.23-2.632-2.275-1.963-4.775-3.882-7.318-5.488-1.428-.937-3.168-1.517-4.684-2.275-.492-.223-1.385-.357-1.74-.803-.805-.982-1.205-2.276-1.83-3.436a123.45 123.45 0 0 1-3.658-7.764c-.758-1.74-1.295-3.48-2.23-5.087-4.641-7.585-9.594-12.18-17.312-16.687-1.65-.937-3.613-1.338-5.711-1.829-1.115-.09-2.23-.134-3.346-.224-.67-.268-1.383-1.115-2.053-1.517-2.543-1.606-9.102-5.131-10.977-.491-1.205 2.9 1.785 5.756 2.855 7.229.76 1.026 1.695 2.187 2.232 3.346.355.758.4 1.517.713 2.32.758 2.008 1.383 4.194 2.32 6.023.49.937 1.025 1.919 1.65 2.767.357.491 1.027.714 1.115 1.517-.625.892-.668 2.231-1.025 3.346-1.562 5.042-.982 11.244 1.338 14.991.715 1.115 2.365 3.569 4.686 2.633 2.008-.848 1.561-3.347 2.141-5.622.135-.491.045-.848.312-1.205v.089c.58 1.249 1.205 2.454 1.83 3.658 1.338 2.187 3.748 4.507 5.801 6.023 1.025.803 1.873 2.187 3.256 2.632v-.09h-.133c-.268-.4-.67-.579-.982-.892-.803-.803-1.695-1.785-2.365-2.677-1.828-2.499-3.479-5.265-4.996-8.121-.715-1.383-1.34-2.9-1.918-4.283-.225-.535-.225-1.338-.715-1.651-.67 1.026-1.605 1.874-2.143 3.079-.803 1.919-.936 4.283-1.203 6.693-.18.089-.135.044-.225.134-1.426-.357-1.918-1.83-2.453-3.079-1.293-3.168-1.562-8.254-.402-11.913.312-.937 1.697-3.882 1.117-4.774-.27-.848-1.117-1.383-1.607-2.052-.625-.803-1.205-1.874-1.65-2.811-1.07-2.499-1.562-5.265-2.723-7.763-.58-1.205-1.471-2.41-2.23-3.436-.848-1.205-1.785-2.052-2.453-3.48-.223-.491-.535-1.294-.223-1.83.133-.357.268-.491.623-.625.58-.446 2.232.179 2.855.401 1.607.714 2.99 1.339 4.373 2.276.67.446 1.34 1.293 2.143 1.517h.893c1.428.312 3.033.089 4.371.491 2.365.713 4.506 1.829 6.426 3.079 5.889 3.703 10.664 8.968 13.965 15.259.535 1.026.758 1.963 1.205 3.034.938 2.187 2.141 4.417 3.078 6.514.893 2.142 1.83 4.284 3.123 6.023.715.937 3.391 1.428 4.596 1.918.848.357 2.23.758 3.035 1.25 1.561.892 3.033 2.008 4.506 3.034.712.496 2.942 1.611 3.032 2.548z" fill="#00678c"/><path d="M133.566 56.124a7.59 7.59 0 0 0-1.828.224v.089h.133c.357.714.982 1.205 1.428 1.829.312.714.67 1.428.982 2.142l.133-.134c.625-.401.893-1.115.893-2.23-.223-.268-.268-.58-.49-.893-.313-.447-.848-.67-1.251-1.027z" fill="#00678c"/><path d="M85.96 128.227h16.731c1.963 0 3.881-.402 5.398-1.117 2.498-1.158 3.748-2.721 3.748-4.773v-4.283c0-1.65-1.428-3.256-4.148-4.283-1.473-.58-3.258-.848-4.998-.848h-7.049c-2.365 0-3.48-.715-3.748-2.275-.045-.178-.045-.357-.045-.535v-2.633c0-.178 0-.312.045-.49.268-1.205.892-1.562 2.945-1.74.178 0 .401-.045.58-.045h16.642v-3.881H95.687c-2.365 0-3.57.178-4.685.49-3.48 1.115-4.997 2.811-4.997 5.801v3.391c0 2.633 2.989 4.863 7.942 5.398.58 0 1.115.045 1.695.045h6.024c.223 0 .445 0 .623.045 1.875.178 2.633.49 3.213 1.158.312.357.447.67.447 1.072v3.391c0 .402-.268.938-.848 1.383-.492.447-1.34.715-2.455.803-.223 0-.4.045-.625.045H85.96v3.881zM148.156 121.443c0 4.016 2.945 6.246 8.969 6.693.535.045 1.115.09 1.65.09h15.17v-3.883h-15.26c-3.436 0-4.729-.848-4.729-2.9v-20.121h-5.801v20.121h.001zM115.541 121.666v-13.83c0-3.525 2.453-5.666 7.361-6.336.492-.09 1.072-.09 1.562-.09h11.064c.535 0 1.027 0 1.607.09 4.863.67 7.361 2.811 7.361 6.336v13.83c0 2.857-1.07 4.373-3.48 5.355l5.756 5.176h-6.781l-4.641-4.15-4.686.268h-6.201c-1.07 0-2.186-.133-3.436-.49-3.701-.983-5.486-2.946-5.486-6.159zm6.291-.355c0 .223.045.4.09.625.357 1.605 1.873 2.498 4.148 2.498h5.311l-4.863-4.373h6.781l4.238 3.793c.76-.402 1.295-1.027 1.473-1.83.045-.223.045-.4.045-.58v-13.295c0-.135 0-.312-.045-.492-.357-1.516-1.873-2.363-4.105-2.363h-8.834c-2.588 0-4.238 1.115-4.238 2.855v13.162h-.001zM176.623 128.227h.848v-3.213h1.16v-.67h-3.168v.67h1.16v3.213zm6.514 0h.758v-3.883h-1.16l-1.025 2.678-1.025-2.678h-1.205v3.883h.803v-2.945l1.115 2.945h.58l1.115-2.945h.045v2.945h-.001z" fill="#ce8b2c"/><path d="M12.029 92.13L8.771 77.049h1.651l1.874 9.905c.223 1.026.402 2.052.536 3.078l.58-2.811 2.365-10.173h1.918l1.785 7.63c.446 1.874.758 3.658.981 5.354.134-.981.357-2.097.625-3.301l1.918-9.682H24.7L21.265 92.13h-1.562l-2.632-11.467-.402-1.785c-.089.669-.223 1.25-.357 1.785L13.679 92.13h-1.65zM25.727 84.813c0-2.588.58-4.551 1.695-5.935 1.116-1.383 2.543-2.052 4.239-2.052 1.07 0 2.097.268 2.989.892s1.606 1.517 2.142 2.677c.491 1.204.759 2.587.759 4.238 0 2.231-.491 4.016-1.518 5.443-1.115 1.562-2.587 2.32-4.372 2.32-1.83 0-3.302-.803-4.417-2.365-1.027-1.47-1.517-3.21-1.517-5.218zm1.695 0c0 1.874.401 3.302 1.205 4.328.848 1.026 1.829 1.562 2.989 1.562 1.205 0 2.231-.536 3.034-1.562s1.205-2.543 1.205-4.551c0-1.338-.178-2.454-.625-3.479-.312-.803-.803-1.428-1.428-1.874a3.529 3.529 0 0 0-2.142-.714c-1.25 0-2.276.49-3.034 1.517-.803 1.025-1.204 2.631-1.204 4.773zM39.602 92.13V77.049h5.488c1.115 0 1.963.134 2.499.446.58.268 1.026.714 1.338 1.383.357.669.536 1.428.536 2.275 0 1.161-.268 2.053-.892 2.767-.581.714-1.428 1.16-2.588 1.383.491.268.803.536 1.071.803.491.58.893 1.205 1.294 1.918l2.141 4.105h-2.052l-1.651-3.124c-.669-1.205-1.115-2.052-1.472-2.454-.312-.446-.625-.759-.937-.893s-.714-.223-1.249-.223h-1.874v6.693h-1.652v.002zm1.651-8.433h3.48c.758 0 1.338-.089 1.74-.268.401-.178.713-.491.981-.848.223-.402.312-.893.312-1.428 0-.758-.223-1.338-.669-1.784-.446-.446-1.071-.669-1.963-.669h-3.882v4.997h.001zM52.006 92.13V77.049h1.651v7.496l6.113-7.496H62l-5.22 6.113 5.443 8.968h-2.186l-4.372-7.585-2.008 2.365v5.22h-1.651zM62.982 87.267l1.562-.134c.089.803.268 1.472.58 1.918.268.491.714.848 1.249 1.115.536.312 1.16.446 1.83.446.981 0 1.695-.268 2.231-.713.535-.491.803-1.116.803-1.874 0-.446-.089-.803-.268-1.16-.178-.312-.491-.58-.893-.803-.401-.223-1.249-.535-2.543-.892-1.16-.357-2.008-.714-2.499-1.071a3.256 3.256 0 0 1-1.16-1.294c-.268-.536-.402-1.16-.402-1.829 0-1.25.402-2.231 1.16-2.99.803-.803 1.874-1.16 3.212-1.16.892 0 1.695.178 2.409.535.669.357 1.205.892 1.606 1.562a5.06 5.06 0 0 1 .58 2.409l-1.562.134c-.045-.981-.357-1.695-.848-2.186-.536-.491-1.205-.714-2.141-.714-.938 0-1.651.223-2.098.625a1.99 1.99 0 0 0-.758 1.606c0 .625.179 1.071.536 1.428.356.312 1.16.669 2.409 1.026 1.249.312 2.097.625 2.588.848.759.401 1.338.892 1.695 1.517.402.625.58 1.383.58 2.231a4.67 4.67 0 0 1-.625 2.364c-.402.714-.937 1.25-1.651 1.606-.669.401-1.517.58-2.499.58-1.517 0-2.766-.446-3.658-1.383s-1.381-2.186-1.425-3.747zM82.524 92.13l-3.257-15.081h1.651l1.874 9.905c.223 1.026.401 2.052.536 3.078l.58-2.811 2.364-10.173h1.919l1.784 7.63a52.74 52.74 0 0 1 .982 5.354c.134-.981.357-2.097.58-3.301l1.963-9.682h1.695L91.76 92.13h-1.562l-2.633-11.467-.401-1.785c-.089.669-.223 1.25-.357 1.785L84.175 92.13h-1.651zM96.98 92.13V77.049h1.651V92.13H96.98zM104.654 92.13V78.834h-4.06v-1.785h9.771v1.785h-4.103V92.13h-1.608zM111.973 92.13V77.049h1.65v6.202h6.424v-6.202h1.652V92.13h-1.652v-7.094h-6.424v7.094h-1.65z" fill="#00678c"/></g></svg>
+                <h5 class="h5">Datenbanken</h5>
+                <data class="mb-8" value="60"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" width="34" height="34" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 2080 2325.5" style="enable-background:new 0 0 2080 2325.5;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#656565;}
+                  .st1{fill:url(#SVGID_1_);}
+                  .st2{fill:url(#SVGID_2_);}
+                  .st3{opacity:0.444;fill:url(#SVGID_3_);enable-background:new    ;}
+                </style>
+                <path class="st0" d="M227.1,1988.2c0-92.2-26.3-138.2-79-139.9c-21.4-1.6-41.1,3.3-60.9,9.9c-16.5,4.9-26.3,11.5-31.3,16.5v217.2
+                  c32.9,21.4,62.5,31.3,88.9,29.6C199.1,2116.5,227.1,2072.1,227.1,1988.2z M291.3,1991.5c0,46.1-9.9,83.9-32.9,115.2
+                  c-24.7,34.6-57.6,52.7-102,52.7c-32.9,1.6-65.8-9.9-100.4-31.3v197.5L0,2305.8v-439.4c9.9-11.5,21.4-21.4,34.6-29.6
+                  c32.9-19.7,74.1-29.6,120.1-29.6c42.8,0,77.3,18.1,100.4,52.7C279.7,1897.7,291.3,1938.8,291.3,1991.5L291.3,1991.5z M631.9,2121.5
+                  c0,62.5-6.6,105.3-18.1,128.4c-13.2,23-36.2,42.8-70.8,57.6c-29.6,11.5-59.2,18.1-92.2,18.1l-9.9-34.6c34.6-4.9,57.6-9.9,70.8-13.2
+                  c26.3-9.9,46.1-23,55.9-42.8c8.2-14.8,11.5-44.4,11.5-87.2V2133c-37.8,18.1-79,26.3-120.1,26.3c-28,0-52.7-8.2-72.4-26.3
+                  c-23-18.1-34.6-42.8-34.6-72.4v-232l55.9-19.7v233.7c0,24.7,8.2,44.4,24.7,57.6c16.5,13.2,36.2,19.7,62.5,19.7
+                  c26.3,0,52.7-9.9,82.3-29.6V1817h55.9L631.9,2121.5z M849.1,2157.7H831c-31.3,0-55.9-8.2-74.1-23c-18.1-14.8-26.3-36.2-26.3-62.5
+                  v-220.5h-37.8V1817h37.8v-93.8l55.9-19.7V1817h62.5v34.6h-62.5v217.2c0,21.4,4.9,36.2,16.5,44.4c9.9,6.6,24.7,11.5,46.1,13.2
+                  L849.1,2157.7z M1188.1,2152.7h-55.9v-215.6c0-21.4-4.9-41.1-14.8-55.9c-11.5-18.1-28-26.3-49.4-26.3c-26.3,0-57.6,13.2-95.4,41.1
+                  v258.4h-55.9v-515.1l55.9-18.1v233.7c36.2-26.3,74.1-39.5,116.8-39.5c29.6,0,52.7,9.9,72.4,29.6c18.1,19.7,28,44.4,28,74.1
+                  L1188.1,2152.7z M1484.3,1978.3c0-34.6-6.6-64.2-19.7-87.2c-16.5-28-39.5-42.8-74.1-44.4c-60.9,3.3-92.2,47.7-92.2,131.6
+                  c0,39.5,6.6,70.8,19.7,97.1c16.5,32.9,41.1,49.4,74.1,49.4C1453,2123.1,1484.3,2075.4,1484.3,1978.3z M1545.2,1978.3
+                  c0,49.4-13.2,92.2-37.8,125.1c-28,36.2-67.5,55.9-115.2,55.9c-49.4,0-87.2-18.1-115.2-55.9c-24.7-32.9-37.8-74.1-37.8-125.1
+                  c0-47.7,13.2-87.2,41.1-118.5c29.6-34.6,65.8-51,111.9-51s83.9,16.5,113.5,51C1532,1892.7,1545.2,1932.2,1545.2,1978.3z
+                   M1866.1,2152.7h-55.9v-227.1c0-24.7-8.2-44.4-23-57.6c-14.8-13.2-34.6-21.4-60.9-19.7c-26.3,0-52.7,9.9-75.7,26.3V2156h-55.9v-288
+                  c31.3-23,60.9-39.5,88.9-46.1c26.3-6.6,47.7-9.9,67.5-9.9c13.2,0,26.3,1.6,37.8,3.3c21.4,4.9,39.5,14.8,52.7,28
+                  c14.8,14.8,23,34.6,23,55.9L1866.1,2152.7z"/>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="12914.6377" y1="-27007.6797" x2="12991.0264" y2="-27073.4023" gradientTransform="matrix(9.2563 0 0 -9.3468 -119299.5781 -252400.0313)">
+                  <stop  offset="0" style="stop-color:#5CA0D5"/>
+                  <stop  offset="1" style="stop-color:#316A99"/>
+                </linearGradient>
+                <path class="st1" d="M908.4,0.3c-52.7,0-103.7,4.9-148.1,13.2c-131.6,23-154.7,70.8-154.7,161.3v118.5h309.4v39.5H490.4
+                  c-88.9,0-167.8,54.3-192.5,156.3c-28,118.5-29.6,190.9,0,314.3c21.4,92.2,74.1,156.3,164.6,156.3h107V818.2
+                  c0-102,88.9-192.5,192.5-192.5h307.7c85.6,0,154.7-70.8,154.7-158V173.1c0-83.9-70.8-146.5-154.7-161.3
+                  C1015.3,3.6,961-1.3,908.4,0.3z M740.5,94.1c31.3,0,57.6,26.3,57.6,59.2s-26.3,59.2-57.6,59.2c-31.3,0-57.6-26.3-57.6-59.2
+                  S707.6,94.1,740.5,94.1z"/>
+                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="13020.6973" y1="-27113.1328" x2="12993.4189" y2="-27074.5391" gradientTransform="matrix(9.2563 0 0 -9.3468 -119299.5781 -252400.0313)">
+                  <stop  offset="0" style="stop-color:#FFD43E"/>
+                  <stop  offset="1" style="stop-color:#FFE975"/>
+                </linearGradient>
+                <path class="st2" d="M1262.2,329.4V466c0,107-90.5,195.8-194.2,195.8H760.3c-83.9,0-154.7,72.4-154.7,158v294.6
+                  c0,83.9,72.4,133.3,154.7,158c97.1,29.6,190.9,34.6,309.4,0c77.3-23,154.7-67.5,154.7-158V995.9H914.9v-39.5H1379
+                  c88.9,0,123.4-62.5,154.7-156.3c32.9-97.1,31.3-189.2,0-314.3c-21.4-88.9-64.2-156.3-154.7-156.3L1262.2,329.4z M1087.7,1074.9
+                  c31.3,0,57.6,26.3,57.6,59.2s-26.3,59.2-57.6,59.2c-31.3,0-57.6-26.3-57.6-59.2S1056.5,1074.9,1087.7,1074.9z"/>
+                <path class="st0" d="M1973,1767.7h9.9v-60.9h23v-8.2H1950v8.2h23V1767.7z M2015.8,1767.7h8.2v-55.9l18.1,55.9h9.9l18.1-55.9v55.9
+                  h9.9v-69.1h-11.5l-21.4,59.2l-18.1-59.2h-13.2L2015.8,1767.7z"/>
+                <radialGradient id="SVGID_3_" cx="-83039.6641" cy="-13866.3984" r="20.3396" gradientTransform="matrix(0 -3.9477 -17.3558 0 -239744.5313 -326357.7188)" gradientUnits="userSpaceOnUse">
+                  <stop  offset="0" style="stop-color:#B8B8B8;stop-opacity:0.498"/>
+                  <stop  offset="1" style="stop-color:#7F8080;stop-opacity:0"/>
+                </radialGradient>
+                <path class="st3" d="M1332.9,1471.5c0,44.4-185.9,80.6-414.7,80.6s-414.7-36.2-414.7-80.6c0-44.4,185.9-80.6,414.7-80.6
+                  S1332.9,1427,1332.9,1471.5L1332.9,1471.5z"/>
+                </svg>
+                
+
+                <h5 class="h5">Python</h5>
+                <data class="mb-8" value="20"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 20%;"></div>
+              </div>
+            </li>
+          </ul>
+          </div>
+
+          <div id="cms" class="tabcontent">
+            <ul class="skills-list content-card">
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <svg width="34" height="34" viewBox="0 0 512 269" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><g fill="#CB5546"><path d="M466.843 114.37h40.137l4.674-24.544h-40.136l6.839-35.9h-.134l-30.438 23.87-2.288 12.03h-31.528l9.216-48.373c2.171-18.256 29.966-12.728 34.104-11.692l4.444-23.31c-49.982-19.213-64.574 35.002-64.574 35.002l-9.21 48.373h-.162l-31.302 24.544h26.788l-29.432 154.502h26.026l29.428-154.502h31.527L429.3 174.846c-7.326 44.033 36.777 39.211 50.851 36.38l4.4-23.062c-33.67 7.605-29.232-13.318-29.232-13.318l11.525-60.476M312.908 177.787c-27.082 27.788-44.422 9.589-44.422 9.589-11.74-11.43 1.238-23.168 1.238-23.168 17.912-16.37 45.324 1.615 45.324 1.615l-2.14 11.964zm5.991-33.515s-37.286-19.136-63.386 2.174c0 0-15.286 10.194-15.286 30.58 0 20.389 18.686 31.348 18.686 31.348s28.103 14.83 50.114-8.87l-2.43 11.03h24.61l15.469-73.38c11.607-72.404-74.655-46.74-74.655-46.74l-4.704 26.03c63.592-27.716 52.88 20.572 52.88 20.572l-1.298 7.256zM249.977 89.9c-20.068.209-38.307 11.409-38.307 11.409l2.326-10.986h-24.088L167.93 210.758h24.614l14.902-79.233c11.014-22.378 38.242-15.427 38.242-15.427l4.29-26.199M156.057 38.287a65.178 65.178 0 0 1 3.58 2.95l18.685-14.657.582-.757c-2.862-2.89-5.935-5.625-9.257-8.135-42.874-32.36-107.66-18.815-144.693 30.257-37.035 49.07-32.301 115.073 10.573 147.438 35.005 26.42 84.61 22.23 121.798-6.903l-.04-.075-17.785-13.948c-27.555 17.716-61.741 18.99-86.471.328-32.934-24.855-36.568-75.563-8.12-113.26 28.45-37.691 78.215-48.096 111.148-23.238"/></g></svg>
+                  <h5 class="h5">Craft CMS</h5>
+                  <data class="mb-8" value="70"></data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <svg height="34" viewBox="1 .5 148 41.1" width="34" xmlns="http://www.w3.org/2000/svg"><path d="m60.2 14.4v27h-3.8v-27h-6.7v-3.3h17.1v3.3zm20.2 12.9v14h-3.9v-14l-7.7-16.2h4.1l5.7 12.2 5.7-12.2h3.9zm19.5 2.6h-3.6v11.4h-3.8v-30.2s3.7-.3 7.3-.3c6.6 0 8.5 4.1 8.5 9.4 0 6.5-2.3 9.7-8.4 9.7m.4-16c-2.4 0-4.1.3-4.1.3v12.6h4.1c2.4 0 4.1-1.6 4.1-6.3 0-4.4-1-6.6-4.1-6.6m21.5 27.7c-7.1 0-9-5.2-9-15.8 0-10.2 1.9-15.1 9-15.1s9 4.9 9 15.1c.1 10.6-1.8 15.8-9 15.8m0-27.7c-3.9 0-5.2 2.6-5.2 12.1 0 9.3 1.3 12.4 5.2 12.4s5.2-3.1 5.2-12.4c0-9.4-1.3-12.1-5.2-12.1m19.9 27.7c-2.1 0-5.3-.6-5.7-.7v-3.1c1 .2 3.7.7 5.6.7 2.2 0 3.6-1.9 3.6-5.2 0-3.9-.6-6-3.7-6h-3.5v-3.3h3.1c3.5 0 3.7-3.6 3.7-5.3 0-3.4-1.1-4.8-3.2-4.8-1.9 0-4.1.5-5.3.7v-3.2c.5-.1 3-.7 5.2-.7 4.4 0 7 1.9 7 8.3 0 2.9-1 5.5-3.3 6.3 2.6.2 3.8 3.1 3.8 7.3 0 6.6-2.5 9-7.3 9"/><path d="m31.7 28.8c-.6.2-1.1.2-1.7.2-5.2 0-12.9-18.2-12.9-24.3 0-2.2.5-3 1.3-3.6-6.4.8-14.1 3.1-16.5 6.1-.6.8-.9 1.9-.9 3.4 0 9.5 10.1 31 17.3 31 3.3 0 8.8-5.4 13.4-12.8m-3.3-28.3c6.6 0 13.2 1.1 13.2 4.8 0 7.6-4.8 16.7-7.2 16.7-4.4 0-9.9-12.1-9.9-18.2 0-2.8 1.1-3.3 3.9-3.3" fill="#ff8700"/></svg>
+                  <h5 class="h5">Typo3</h5>
+                  <data class="mb-8" value="60"></data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%;"></div>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <svg width="34" height="34" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><path d="M18.124 127.5c0 43.296 25.16 80.711 61.646 98.442L27.594 82.986a108.965 108.965 0 0 0-9.47 44.514zm183.221-5.52c0-13.517-4.856-22.879-9.02-30.165-5.545-9.01-10.742-16.64-10.742-25.65 0-10.055 7.626-19.415 18.368-19.415.485 0 .944.06 1.417.088-19.46-17.829-45.387-28.714-73.863-28.714-38.213 0-71.832 19.606-91.39 49.302 2.566.077 4.984.13 7.039.13 11.44 0 29.15-1.387 29.15-1.387 5.897-.348 6.592 8.312.702 9.01 0 0-5.926.697-12.52 1.042L100.32 194.7l23.937-71.79-17.042-46.692c-5.89-.345-11.47-1.042-11.47-1.042-5.894-.346-5.203-9.358.691-9.01 0 0 18.064 1.388 28.811 1.388 11.44 0 29.151-1.388 29.151-1.388 5.9-.348 6.594 8.312.702 9.01 0 0-5.938.697-12.52 1.042l39.529 117.581 10.91-36.458c4.728-15.129 8.327-25.995 8.327-35.36zm-71.921 15.088l-32.818 95.363a109.376 109.376 0 0 0 30.899 4.456c12.737 0 24.952-2.202 36.323-6.2a9.605 9.605 0 0 1-.779-1.507l-33.625-92.112zm94.058-62.045c.47 3.484.737 7.224.737 11.247 0 11.1-2.073 23.577-8.317 39.178l-33.411 96.6c32.518-18.963 54.39-54.193 54.39-94.545.002-19.017-4.856-36.9-13.4-52.48zM127.505 0C57.2 0 0 57.196 0 127.5c0 70.313 57.2 127.507 127.505 127.507 70.302 0 127.51-57.194 127.51-127.507C255.014 57.196 197.808 0 127.506 0zm0 249.163c-67.08 0-121.659-54.578-121.659-121.663 0-67.08 54.576-121.654 121.659-121.654 67.078 0 121.652 54.574 121.652 121.654 0 67.085-54.574 121.663-121.652 121.663z" fill="#464342"/></svg>
+                  <h5 class="h5">WordPress</h5>
+                  <data class="mb-8" value="40"></data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%;"></div>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="-2 -2 516 114" style="enable-background:new 0 0 511.9 110;" xml:space="preserve" width="34" height="34">
+                    <style type="text/css">
+                      .st0{fill:#189EFF;}
+                    </style>
+                    <g id="XMLID_462_">
+                      <g id="XMLID_564_">
+                        <path id="XMLID_565_" class="st0" d="M150.2,55.5c-4.7-2-8.5-3.9-8.5-6.9c0-2.1,2.4-4.2,6.5-4.2c3.7,0,6.8,0.9,10.1,2.3
+                          c0.9,0.4,2.3,0.5,3.1-0.9l1.6-3.3c0.6-1.2,0.1-2.7-1-3.5c-2.3-1.5-7.2-3.5-13.7-3.5c-11.4,0-16.1,6.9-16.1,12.8
+                          c0,7.7,6,11.6,13.2,14.9c6.5,2.9,10.1,5,10.1,8.1c0,2.7-2.2,4.6-6.2,4.6c-5.6,0-8.9-1.9-11.7-3.5c-1.2-0.7-2.5-0.4-3.1,0.6
+                          l-2.1,4.4c-0.5,1,0.1,1.9,0.8,2.4c2.6,1.8,8,4.8,15.5,4.8c10.5,0,16.8-6.4,16.8-13.7C165.3,62.4,158.8,59.2,150.2,55.5z"/>
+                      </g>
+                      <g id="XMLID_561_">
+                        <path id="XMLID_563_" class="st0" d="M87.8,98c-4.8-3.6-11.8-6.3-19.3-9.2c-8.9-3.4-19-7.3-26.5-13.4C33.4,68.6,29.2,60,29.2,49.1
+                          c0-9.8,4-18.1,11.7-24.1c8.6-6.8,21.6-10.3,37.6-10.3c4.4,0,8.7,0.3,12.6,0.8c0.3,0,0.7-0.1,0.8-0.5c0.2-0.3,0.1-0.7-0.2-0.9
+                          C81.7,5,68.6,0,55,0C40.3,0,26.5,5.7,16.1,16.1C5.7,26.5,0,40.3,0,55c0,14.7,5.7,28.5,16.1,38.9C26.5,104.3,40.3,110,55,110
+                          c11.9,0,23.2-3.7,32.7-10.8c0.2-0.2,0.3-0.4,0.3-0.6C88.1,98.4,88,98.2,87.8,98z"/>
+                        <path id="XMLID_562_" class="st0" d="M109.8,49.9c0-0.2-0.1-0.4-0.3-0.5C98.1,39.9,88.8,36,77.5,36c-6,0-10.6,1.2-13.7,3.6
+                          c-2.7,2.1-4.1,4.9-4.1,8.3c0,9.4,11.6,13.8,24.9,18.8c6.9,2.6,14,5.2,20.6,8.9c0.1,0.1,0.2,0.1,0.4,0.1c0.1,0,0.2,0,0.3-0.1
+                          c0.2-0.1,0.4-0.2,0.5-0.5c2.5-6.4,3.8-13.2,3.8-20.1C110.1,53.4,110,51.7,109.8,49.9z"/>
+                      </g>
+                      <path id="XMLID_558_" class="st0" d="M426.1,84.3c1.4-0.2,2.4-1.2,2.4-2.5V57.9c0-12.2-1.5-21.7-17.2-21.7c-9,0-16,2.4-16.9,2.8
+                        c-1.2,0.4-1.9,1.2-1.6,2.9l1,4c0.3,1.4,1.3,2.3,2.8,2c2.5-0.7,8.1-2.3,13.7-2.3c6.2,0,8.1,3.5,7.9,11.3c0,0-4.8-1.5-9.9-1.5
+                        c-12.6,0-19.6,6.8-19.6,15.8c0,10.2,6.5,13.7,15.7,13.7c7.5,0,15.3-0.1,18.5-0.3L426.1,84.3z M418,75.6c-1.5,2.4-6.8,1.8-11.4,1.7
+                        c-5.1-0.1-7.6-1.9-7.6-6.2c0-5.1,4.4-8.1,10.1-8.1c4.5,0,8.3,1.3,8.9,1.7L418,75.6L418,75.6z"/>
+                      <path id="XMLID_555_" class="st0" d="M506.3,35.7c3.1,0,5.6-2.5,5.6-5.6c0-3.1-2.5-5.6-5.6-5.6s-5.6,2.5-5.6,5.6
+                        C500.7,33.2,503.2,35.7,506.3,35.7z M506.3,25.4c2.6,0,4.7,2.1,4.7,4.8s-2.1,4.8-4.7,4.8c-2.6,0-4.7-2.1-4.7-4.8
+                        S503.7,25.4,506.3,25.4z"/>
+                      <path id="XMLID_552_" class="st0" d="M504.4,32.9h0.5c0.1,0,0.2-0.1,0.2-0.2v-2h1.2l1,2.1c0,0.1,0.1,0.1,0.2,0.1h0.6
+                        c0.1,0,0.2-0.1,0.1-0.2l-1.1-2c0.7-0.3,1.2-0.9,1.2-1.6c0-1-0.8-1.7-1.8-1.7h-2.2c-0.1,0-0.2,0.1-0.2,0.2v5.3
+                        C504.3,32.9,504.3,32.9,504.4,32.9z M505.1,28.1h1.4c0.5,0,1,0.4,1,1c0,0.6-0.5,1-1,1h-1.4V28.1z"/>
+                      <path id="XMLID_551_" class="st0" d="M196.6,35.7c-7.4,0-12.5,4.1-13.6,4.9v-21c0-1.1-1.1-2.2-2.2-2.2H175c-1.2,0-2.2,1.1-2.2,2.2
+                        v63c0,1.2,1,2.2,2.2,2.2h5.6c1.4,0,2.3-0.9,2.3-2.2V52.2c1-2,5.1-6.8,12.3-6.8c6.1,0,9.4,4.6,9.4,12.3v24.9c0,1.2,1,2.2,2.2,2.2
+                        h5.7c1.1,0,2.2-1,2.2-2.2V57.9C214.8,45.1,209.9,35.7,196.6,35.7z"/>
+                      <path id="XMLID_548_" class="st0" d="M315.8,58.4c-0.6-16-7.2-22.7-22.7-22.7c-7.4,0-16.2,2.2-17.5,2.8c-1.6,0.7-2.8,1.5-2.8,2.6
+                        V42v3.4v11V58v43c0,1.2,1,2.2,2.2,2.2h4.7c1.5,0,2.4-0.9,2.4-2.2l0-16.9c1.4,0.4,8.7,1,14.8,0.8c10.9-0.3,18.2-8.2,18.8-21.6
+                        C315.9,61.4,315.8,58.4,315.8,58.4z M305.9,63.2c-0.2,9.1-2.8,13.1-10.5,13.5c-3.8,0.2-12.7-0.8-12.7-0.8c-0.4-0.1-0.6-0.3-0.6-0.6
+                        l0-18.3V46.5c0-0.3,0.2-0.5,0.5-0.5c1-0.1,4.9-1.3,10.4-1.3c9.3,0,12.5,1.4,12.9,13.1C306,59.3,306,61.5,305.9,63.2z"/>
+                      <path id="XMLID_525_" class="st0" d="M383.2,36.7h-4.3c-1.2,0-3,0-3.6,1.4l-7.5,27.1h-0.2L355,36.8c-0.2-0.6-0.9-1.1-2-1.1h-0.7
+                        c-0.9,0-1.6,0.5-1.9,1.1l-12.7,28.3h-0.2l-7.7-27c-0.2-0.9-1.2-1.4-2-1.4h-6.1c-1.6,0-2.3,1.2-1.6,2.7l13.7,44.3
+                        c0.2,0.7,0.9,1.2,1.9,1.2h0.6c1,0,1.6-0.5,1.8-1.1l14.5-32h0.2L367,83.7c0.3,0.6,1,1.1,2,1.1h0.4c1,0,1.9-0.5,2.1-1.2L385,39.4
+                        C385.7,37.9,384.8,36.7,383.2,36.7z"/>
+                      <path id="XMLID_482_" class="st0" d="M458.2,36.3c-0.2,0-0.5,0-0.7,0c-0.4,0-0.8,0-1.2,0c-2.4,0-4.8,0.1-7,0.2l0,0
+                        c-4.2,0.2-6.7,0.5-8.5,0.7c0,0-1.1,0.1-2.5,0.3c-0.9,0.1-1.5,0.5-1.9,1c-0.3,0.3-0.4,0.7-0.4,1.1v0.2v0.9V44v9.5v29.1
+                        c0,1.2,1,2.2,2.2,2.2h4.7c1.9,0,3.3-0.2,3.3-2.2V53.5l0,0v-6.7c0-0.3,0.4-0.6,0.7-0.8c1.1-0.7,3.9-1.2,9.5-1.2c0.5,0,0.9,0,1.3,0
+                        c1.3,0.1,3.3,0.5,3.9,0.9c1,0.5,2.2,0.2,2.9-1.1l2.4-4C468.3,37.5,462.7,36.3,458.2,36.3z"/>
+                      <path id="XMLID_470_" class="st0" d="M490.4,35.7C476.3,35.7,467,47,467,60.2c0,13.4,9.3,24.6,23.5,24.6c7.8,0,14-2.8,17.4-5.8
+                        c1.4-1.2,1-2.1,0.2-3.2l-2.8-4.3c-0.8-1.2-1.7-0.9-2.8-0.2c-2.8,2-6.1,4-11.5,4c-8.2,0-13.9-6.5-14-12.8h32.5c1,0,2-0.8,2.1-2
+                        c0.1-0.8,0.2-2.4,0.2-3.3C511.9,44.8,502.6,35.7,490.4,35.7z M477.6,55c0.7-5.9,5.2-10.7,12.6-10.7c6.9,0,11.4,5,11.6,10.7H477.6z"
+                        />
+                      <path id="XMLID_463_" class="st0" d="M264.6,50.2c-1.1-3-2.5-5.6-4.5-7.8s-4.2-3.8-6.8-5s-6.4-1.8-9.5-1.8s-6.9,0.6-9.5,1.8
+                        s-4.9,2.8-6.9,5c-1.9,2.2-3.4,4.8-4.5,7.8c-1.1,3-1.6,6.4-1.6,10c0,3.7,0.5,7.1,1.6,10.1s2.6,5.6,4.5,7.7c1.9,2.2,4.2,3.8,6.9,5
+                        s6.4,1.8,9.5,1.8s6.9-0.6,9.5-1.8s4.9-2.8,6.8-5c1.9-2.2,3.4-4.7,4.5-7.7s1.6-6.4,1.6-10.1C266.2,56.6,265.7,53.3,264.6,50.2z
+                        M243.5,76.7c-8.5,0-12.8-7.2-12.8-16.1s4.3-16.1,12.8-16.1s12.8,7.2,12.8,16.1S252,76.7,243.5,76.7z"/>
+                    </g>
+                    </svg>
+
+                  <h5 class="h5">Shopware 5</h5>
+                  <data class="mb-8" value="40"></data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%;"></div>
+                </div>
+  
+              </li>
+              <li class="skills-item">
+                
+                <div class="title-wrapper">
+                  <svg width="34" height="34" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                    <path d="M255.667 35.561c0-18.607-15.084-33.691-33.691-33.691-16.99 0-31.035 12.578-33.349 28.929l-.341-.18c-27.553-12.427-50.762 9.584-50.762 9.584l-61.391 61.692 24.257 23.36 49.413-48.546c23.074-23.075 35.638-7.457 35.638-7.457 17.37 14.674.598 32.044.598 32.044l24.857 23.959c20.298-21.923 21.475-41.056 15.305-56.276 16.612-2.08 29.466-16.243 29.466-33.418" fill="#F9AE41"/>
+                    <path d="M226.514 190.507c.115-.215.18-.34.18-.34 12.428-27.554-9.584-50.763-9.584-50.763l-61.693-61.393-23.359 24.259 48.546 49.412c23.074 23.075 7.456 35.64 7.456 35.64-14.673 17.37-32.043.598-32.043.598l-23.959 24.856c21.922 20.298 41.056 21.475 56.275 15.305 2.08 16.612 16.244 29.467 33.419 29.467 18.607 0 33.69-15.084 33.69-33.691 0-16.99-12.577-31.035-28.928-33.35" fill="#EE4035"/>
+                    <path d="M155.942 133.04l-49.413 48.545c-23.075 23.076-35.639 7.459-35.639 7.459C53.52 174.369 70.291 157 70.291 157L45.436 133.04c-20.298 21.922-21.476 41.055-15.307 56.275C13.517 191.396.663 205.558.663 222.734c0 18.607 15.084 33.69 33.692 33.69 16.99.001 31.035-12.576 33.349-28.927.216.115.341.179.341.179 27.554 12.43 50.762-9.584 50.762-9.584l61.392-61.693-24.257-23.359" fill="#4F91CD"/>
+                    <path d="M75.727 106.613c-23.075-23.075-7.459-35.64-7.459-35.64 14.676-17.37 32.045-.598 32.045-.598l23.959-24.855C102.35 25.222 83.217 24.045 67.997 30.214 65.917 13.601 51.755.747 34.577.747 15.973.747.89 15.831.888 34.438c0 16.991 12.577 31.036 28.929 33.35-.115.216-.179.342-.179.342-12.43 27.552 9.583 50.76 9.583 50.76l61.694 61.393 23.359-24.257-48.546-49.413" fill="#7AC043"  />
+                  </svg>
+                  <h5 class="h5">Joomla</h5>
+                  <data class="mb-8" value="20"></data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 20%;"></div>
+                </div>
+  
+              </li>
+
+            </ul>
+          </div>
+
+          <div id="hobbies" class="tabcontent">
+            <div class="content-card"> 
+
+            <div class="hobbie-container">
+            
+              <div class="col-6">     
+                <h4 class="h4">Ehrenamt</h4>
+                <ul>
+                  <li class="ehrenamt-item">
+                      <h4 class="h4 timeline-item-title">
+                      <a href="https://www.apicon.de/de/" target="_blank">KulturTafel Schweinfurt e.V.</a>
+                      </h4>
+                      <span>seit 2014</span>
+                      <p>
+                          Vorstandsmitglied <br>
+                          Einpflegen neuer Veranstaltungen <br>
+                          Öffentlichkeitsarbeit (auf z.B. Stadtfesten)
+                      </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6">
+                <h4 class="h4">Hobbies</h4>
+                <ul>
+                  <li class="hobbie-item">Kino</li>
+                  <li class="hobbie-item">Schwimmen</li>
+                  <li class="hobbie-item">Zeichnen</li>
+                  <li class="hobbie-item">Fahrradfahren</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+          <!--<button class="form-btn mt-3" onclick="Button()">
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Unterlagen downloaden</span>
+          </button>-->
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio white-bg" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="portfolio-text">
+          <p>
+            Hier finden Sie eine Auswahl an Projekten an denen ich im Rahmen meiner aktuellen Anstellung, sowie im privaten Umfeld gearbeitet habe. <br>
+            In den vergangenen Jahren konnte ich meine Fähigkeiten ständig verbessern, was sich auch in der Qualität der Projekte zeigt.
+          </p>
+        </section>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Alle</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Craft</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Typo3</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>WordPress</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>andere</button>
+            </li>
+            <li class="filter-item" data-toggle="modal" data-target="#kleinigkeitModal">
+              <button data-filter-btn>Kleinigkeiten</button>
+            </li>
+            
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Kategorie auswählen</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>Alle<button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Craft</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Typo3</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>WordPress</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>andere</button>
+              </li>
+              <li class="select-item" data-toggle="modal" data-target="#kleinigkeitModal">
+                <button data-filter-btn>Kleinigkeiten</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- Liste mit Projekten -->
+
+            <li class="project-item  active" data-filter-item data-category="craft">
+              <a href="https://www.dbmuseum.de/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/dbm.PNG" alt="./assets/images/projekte/dbm.PNG" loading="lazy">
+                </figure>
+              
+                <h3 class="project-title">DB Museum</h3>
+              </a>  
+                <p class="project-category"><span class="cmsClass">Craft</span>
+                  Projet für die drei Museumsstandorte des Museums. Das Projekt umfasst die Umsetzung des Screen-Designs,Projektbetreuung und Beratung, Zweisprachigkeit, Umsetzung weiterer Ideen und Weiterentwicklung.
+                </p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="typo3">
+              <a href="https://www.lohr.de/gs-sendelbach/home" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/lohr.PNG" alt="lohr" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Grundschulen Sendelbach</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">Typo3</span>
+                  Komplettes Redesign der drei Standorte der Grundschulen in Lohr am Main. Überwiegend CSS-Arbeiten und Anpassungen an bestehenden Extensions.
+                </p>              
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="wordpress">
+              <a href="https://www.kulturtafel-sw.de/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/kulturtafel.png" alt="kulturtafel" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">KulturTafel Schweinfurt</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">WordPress</span>
+                   Überwiegend Backend-Tätigkeiten, Einpflegen neuer Veranstaltungen
+                </p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="typo3">
+              <a href="https://www.netzhaut.de/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/netzhaut.PNG" alt="netzhaut" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Netz-haut GbmH</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">Typo3</span>
+                  Durchführen von Typo3-Upgrades inklusive firmeneigener Extensions. Änderungen am Content und Designanpassungen
+                </p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="craft">
+              <a href="https://www.autohaus-pfister.de/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/pfister.PNG" alt="pfister" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Autohaus Pfister</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">Craft</span>
+                  Erstellen der Website nach Vorgaben des Kunden. Durchführen von Änderungen nach Absprache mit dem Kunden.
+                </p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="wordpress">
+              <a href="http://vom-klempauer-hofsee.de/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/vom_klempauer_hofsee.PNG" alt="vom-klempauer-hofsee" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Vom Klempauer Hofsee</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">Wordpress</span>
+                  Erstellen der Website und Anpassen des ausgewählten Templates. Ständige Contentpflege. Aktuell bereite wird ein Redisign vorbereitet.
+                </p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="andere">
+              <a href="https://order-and-chaos.eu/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/oac.png" alt="oac" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gildenseite Order and Chaos</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">andere</span>
+                  Diese Seite wurde ohne CMS erstellt. Sie verwendet diverse APIs, eine SQL-Datenbank für die Memberliste und ist an einen Discord-Server angebunden. <br>
+                  Leider ist die Funktionalität derzeit aufgrund eines Datenbankproblems nicht stark eingeschränkt.
+                </p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="craft">
+              <a href="http://ddac.de/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/ddac.PNG" alt="ddac" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DDAC e.V.</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">Craft</span>
+                  Diese Seite wurde ohne CMS erstellt. Sie diente mir als Visitenkarte im letzten Bewerbungsprozess </p>
+                </p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="andere">
+              <a href="https://lars.schleyer-sw.de/diverses/bewerbung/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/bewerbung_alt.PNG" alt="bewerbung" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Erste Bewerbungsseite</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">andere</span>
+                  Diese Seite wurde ohne CMS erstellt. Sie diente mir als Visitenkarte im letzten Bewerbungsprozess </p>
+                </p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="craft">
+              <a href="https://www.kultur-bureau.de/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/kulturbureau.PNG" alt="kultur-bureau" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kulturbureau München</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">Craft</span>
+                  Neu erstelltes Webprojekt für das Kulturbureau in München. Verwendung eines Bootstrap-Templates als Grundlage, danach wurden einige ANpassungen vorgenomen.</p>
+                </p>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="craft">
+              <a href="https://www.kultur-bureau.de/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/palette_neugebauer.PNG" alt="palette" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Palette Neugebauer</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">Craft</span>
+                  Neu erstelltes Webprojekt für Palette Neugebauer (Kunstfachhandel). Verwendung eines Bootstrap-Templates als Grundlage, danach wurden einige ANpassungen vorgenomen.</p>
+                </p>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="typo3">
+              <a href="https://www.atelier-winkler.de/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/atelier_winkler.PNG" alt="awinkler" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Atelier Winkler</h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">Typo3</span>
+                  Durchführen von Typo3-Upgrades inklusive firmeneigener Extensions. Änderungen am Content und Designanpassungen.
+                </p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="typo3">
+              <a href="https://www.baugrund.de//" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projekte/baugrund.PNG" alt="baugrund" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Baugrund </h3>
+              </a>
+                <p class="project-category"><span class="cmsClass">Typo3</span>
+                  Durchführen von Typo3-Upgrades. Umfassende Designanpassungen.
+                </p>
+            </li>
+          </ul>
+
+          <!-- Modal Kleinigkeiten -->
+          <div class="modal fade" id="kleinigkeitModal" tabindex="-1" role="dialog" aria-labelledby="kleinigkeitModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title h3 article-title mb-0" id="kleinigkeitModalTitle">Kleine Projekte</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Diese kleinen Projekte sind zum Teil im Rahmen eine Javascript-Developer Kurses entstanden und darüber hinaus 
+                  </p>
+                  <ul class="modal-list">
+                    <li class="modal-item"><a href="https://lars.schleyer-sw.de/diverses/tetris/" target="_blank">Tetris</a></li>
+                    <li class="modal-item"><a href="https://lars.schleyer-sw.de/diverses/quiz/"target="_blank">Quiz</a></li>
+                    <li class="modal-item"><a href="https://lars.schleyer-sw.de/diverses/galgenraten/" target="_blank">Galgenraten</a></li>
+                    <hr>
+                    <li class="modal-item"><a href="https://lars.schleyer-sw.de/diverses/circles/" target="_blank">Kreise</a></li>
+                    <li class="modal-item"><a href="https://lars.schleyer-sw.de/diverses/galerie/" target="_blank">Galerie</a></li>
+                    <li class="modal-item"><a href="https://lars.schleyer-sw.de/diverses/uhr/" target="_blank">Binäruhr</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+      <article class="contact " data-page="kontakt">
+
+        <header>
+          <h2 class="h2 article-title">Kontakt</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Ihnen hat diese Seite gefallen? Sie suchen noch einen fähigen und kompetenten Web Developer?
+            Super! Dann nutzen Sie gern das Kontaktformular und schreiben Sie mir... <br>
+            ich freue mich von Ihnen zu hören.
+          </p>
+
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Kontaktformular</h3>
+          <p id="formResponse"></p>
+          <form class="form" name="contact_form" onsubmit="event.preventDefault();" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="company" class="form-input" placeholder="Unternehmen" id="company" required data-form-input>
+  	          <input type="email" name="email" class="form-input" placeholder="Email" id="mail" required data-form-input>
+              <input type="text" name="phone" id="phone" value="" tabindex="-1" value="4567" autocomplete="off" style="display: none">
+
+            </div>
+
+            <textarea id="message" name="message" class="form-input" placeholder="Ihre Nachricht" required
+              data-form-input></textarea>
+
+            <button id="discordButton" class="form-btn"> 
+              <ion-icon name="paper-plane"></ion-icon>
+              Senden
+            </button>
+          </form>
+
+        </section>
+
+      </article>
+    </div>
+
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/buildProjects.js"></script>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--
+    - My JS
+  -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/discord.js"></script>
+</body>
+
+</html>
